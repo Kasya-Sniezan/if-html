@@ -97,24 +97,62 @@
                 <td>&lt;tbody&gt;</td>
                 <td>Groups the body content in a table</td>
             </tr>
-            <tr>
-                <td>&lt;tfoot&gt;</td>
-                <td>Groups the footer content in a table</td>
-            </tr>
         </tbody> 
+       
+        <tfoot>
+            <tr>
+                 <td>&lt;tfoot&gt;</td>
+                 <td>Groups the footer content in a table</td>
+            </tr>
+        </tfoot>
     </table>
 
-    <form action="">
-        <label for="Name"></label>
-        <input type="text" name="name" id="Name">
+    <br>
 
-        <label for="Email"></label>
-        <input type="email" name="email" id="Email">
+    <form action="/" method="get">
+        <fieldset >
+            <legend>My first form</legend>
 
-        <label for="Password"></label>
-        <input type="password" name="password" id="Password">
+            <div><label for="name">Name</label></div>
+            <div><input type="text" name="name" id="name" placeholder="Name" required></div>
+            
+            <div><label for="email">Email</label></div>
+            <div><input type="email" name="email" id="email" required></div>
+            
+            <div><label for="password">Password</label></div>
+            <div><input type="password" name="password" id="password" required></div>
+            
+            <div><label for="level">Your programming level</label></div>
+            <div><input type="range" id="level" name="level" min="1" max="10" step="1" value="0"></div>
+            
+            <br>
+            
+            <label>What does HTML stand for?</label><br><br>
+            <input type="checkbox" name="checkbox" id="checkbox1">
+            <label for="checkbox1">Hyperlinks and Text Markup Language</label><br>
+            <input type="checkbox" name="checkbox" id="checkbox2">
+            <label for="checkbox2">Home Tool Markup Language</label><br>
+            <input type="checkbox" name="checkbox" id="checkbox3">
+            <label for="checkbox3">Hyper Text Markup Language</label><br><br>
 
-        
+            <label>What does HTTP stand for?</label><br><br>
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Hyper Text Translate Protocol</label><br>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">Hyper Text Transmission Protocol</label><br>
+            <input type="radio" name="radio" id="radio3">
+            <label for="radio3">Hyper Text Transfer Protocol</label><br><br>
+
+            <div><label for="comment">Comment</label></div>
+            <textarea name="comment" id="comment" cols="30" rows="3" maxlength="500" placeholder="Comment"></textarea><br>
+
+            <label for="answers">What does HTML stand for?</label><br>
+            <select name="answers" id="answers">
+              <option value="answers">Your answer</option>
+            </select><br><br>
+
+            <input type="submit" value="Send"><br><br>
+        </fieldset>
     </form>
 </body>
 </html>
