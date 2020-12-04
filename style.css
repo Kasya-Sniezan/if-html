@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 
 .body-div {
-  height: 569px;
-  width: 1440px;
-  left: 0px;
-  top: 900px;
-  margin: 0%;
   background-color: #ffffff;
 }
 
@@ -52,7 +47,7 @@
   font-family: Roboto;
   color: #383838;
 
-  max-width: 1320px;
+  max-width: 1232px;
   display: flex;
   align-self: center;
   margin: 0 auto;
