@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("../styles/fonts.css");
 
 .body-div {
   background-color: #ffffff;
@@ -9,7 +9,7 @@
   color: #383838;
   font-weight: 500;
   font-style: normal;
-  font-family: Roboto;
+  font-family: "Roboto";
   text-align: center;
 
   line-height: 47px;
@@ -44,7 +44,7 @@
 
 .text-box {
   font-size: 24px;
-  font-family: Roboto;
+  font-family: "Roboto";
   color: #383838;
 
   max-width: 1232px;
