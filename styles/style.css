@@ -35,6 +35,7 @@
   justify-content: space-between;
   align-self: center;
   margin: 0 auto;
+  margin-block-end: 120px;
 }
 
 .item {
@@ -57,4 +58,76 @@
   line-height: 28px;
   font-family: "Roboto";
   color: #383838;
+}
+
+.footer {
+  background-color: #10367c;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.list-wrapper {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-left: 104px;
+  margin-right: 272px;
+}
+
+.list-about {
+  list-style: none;
+  padding: 0%;
+  width: 193px;
+  height: 211px;
+  margin-block-start: 120px;
+}
+
+.list-about li {
+  margin-bottom: 24px;
+}
+
+.list-property-type {
+  list-style: none;
+  padding: 0%;
+  width: 133px;
+  height: 310px;
+  margin-block-start: 120px;
+  margin-block-end: 64px;
+}
+
+.list-property-type li {
+  margin-bottom: 24px;
+}
+
+.list-support {
+  list-style: none;
+  padding: 0%;
+  width: 233px;
+  height: 122px;
+  margin-block-start: 120px;
+}
+
+.list-support li {
+  margin-bottom: 24px;
+}
+
+.text-copyright {
+  width: 256px;
+  height: 16px;
+  margin-left: 103px;
+  padding-bottom: 120px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
 }
