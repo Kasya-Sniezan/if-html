@@ -1,0 +1,143 @@
+@import url("../styles/fonts.css");
+
+.body-div {
+  background-color: #ffffff;
+}
+
+.heading {
+  font-size: 40px;
+  color: #383838;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+
+  line-height: 47px;
+  margin-block-end: 20px;
+  margin-block-start: 120px;
+}
+
+.hr {
+  background-color: #f5bd41;
+  align-self: center;
+
+  width: 100px;
+  height: 4px;
+  top: 1087px;
+  left: 670px;
+  margin-block-end: 85px;
+}
+
+.box {
+  max-width: 1232px;
+  top: 275px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 auto;
+  margin-block-end: 120px;
+}
+
+.item {
+  width: 25%;
+  text-align: center;
+}
+
+.img-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.item-text {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+}
+
+.footer {
+  background-color: #10367c;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding-left: 104px;
+  padding-right: 272px;
+}
+
+.footer-links {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.first-list-element {
+  font-weight: 500;
+}
+
+.list-about {
+  list-style: none;
+  padding: 0%;
+  width: 193px;
+  height: 211px;
+  margin-block-start: 120px;
+}
+
+.list-about li {
+  margin-bottom: 24px;
+}
+
+.list-property-type {
+  list-style: none;
+  padding: 0%;
+  width: 133px;
+  height: 310px;
+  margin-block-start: 120px;
+  margin-block-end: 64px;
+}
+
+.list-property-type li {
+  margin-bottom: 24px;
+}
+
+.list-support {
+  list-style: none;
+  padding: 0%;
+  width: 233px;
+  height: 122px;
+  margin-block-start: 120px;
+}
+
+.list-support li {
+  margin-bottom: 24px;
+}
+
+.text-copyright {
+  width: 256px;
+  height: 16px;
+  margin-left: 103px;
+  padding-bottom: 120px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
