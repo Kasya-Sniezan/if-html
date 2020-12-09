@@ -1,7 +1,148 @@
 @import url("../styles/fonts.css");
 
-.body-div {
+.top-section {
+  background-image: url("../image/castelmezzano-background.svg");
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 900px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.item-header-wrapper {
+  display: flex;
+  padding-block-start: 57px;
+  height: 28px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.first-item-header {
+  width: 59px;
+  padding-right: 24px;
+  padding-left: 993px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.second-item-header {
+  width: 118px;
+  padding-right: 48px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.slogan {
+  width: 542px;
+  height: 118px;
+  padding-left: 104px;
+  padding-top: 293px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+
+  color: #ffffff;
+}
+
+.signature {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 24px;
+
+  color: #ffffff;
+}
+
+.text-1 {
+  margin-left: 128px;
+}
+
+.text-2 {
+  margin-left: 221px;
+}
+
+.form {
+  display: flex;
+  width: 1040px;
+  height: 64px;
+  background: #ffffff;
+  border: 3px solid #f3f3f4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-inline-start: 104px;
+  margin-inline-end: 104px;
+  padding: 0px;
+}
+
+.place-form {
+  width: 463px;
+  padding: 0px;
+}
+
+.text-place-form {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.date-form {
+  display: flex;
+  width: 259px;
+  height: 64px;
+  border: 3px solid #f5bd41;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-block-start: -3px;
+  padding: 0px;
+}
+
+.guests-form {
+  width: 314px;
+  height: 64px;
+  padding: 0px;
+  margin-block-start: -3px;
+}
+
+.button {
+  width: 192px;
+  height: 64px;
+
+  background: #3077c6;
+  border-radius: 8px;
+  margin-block-start: -3px;
+  padding: 0px;
+  margin-inline-end: -4px;
+}
+
+.text-button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 57px;
+}
+
+.offers-section {
   background-color: #ffffff;
+  margin-block-start: 120px;
 }
 
 .heading {
@@ -14,7 +155,6 @@
 
   line-height: 47px;
   margin-block-end: 20px;
-  margin-block-start: 120px;
 }
 
 .hr {
