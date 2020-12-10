@@ -7,31 +7,61 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="top-section">
-      <div class="item-header-wrapper"> 
-        <a href="stays.html" class="first-item-header">Stays</a>
-        <a href="attractions.html" class="second-item-header">Attractions</a>
+    <div class="background">
+      <div class="top-section">
+        <div class="header">
+          <div class="item-header-wrapper">
+            <div><img src="/image/logo_vector.svg" alt="Logo" /></div>
+            <div><a href="stays.html" class="first-item-header">Stays</a></div>
+            <div>
+              <a href="attractions.html" class="second-item-header"
+                >Attractions</a
+              >
+            </div>
+            <div class="night-theme">
+              <img src="/image/night.svg" alt="Night mood" />
+            </div>
+            <div class="account">
+              <img src="/image/account-circle.svg" alt="Account" />
+            </div>
+          </div>
+          <hr class="small-hr" />
+          <div class="page">
+            <div class="slogan">
+              Discover stays <br />
+              to live, work or just relax
+            </div>
+            <div class="signature">
+              <div class="text-1">Your destination or hotel name</div>
+              <div class="text-2">Check-in &#8212; Check-out</div>
+            </div>
+          </div>
+          <form action="/" method="get">
+            <fieldset class="form">
+              <input
+                type="text"
+                name="place"
+                placeholder="New York"
+                required
+                class="place-form"
+              />
+              <input type="date" name="date" class="date-form" />
+              <input type="date" name="date" class="date-form" />
+              <input
+                type="text"
+                name="guests"
+                placeholder="2 Adults &#8212; 0 Children &#8212; 1 Room"
+                required
+                class="guests-form"
+              />
+              <button class="button text-button">Search</button>
+            </fieldset>
+          </form>
+          <div class="icons">
+            <img src="/image/apps.svg" alt="Apps" />
+          </div>
+        </div>
       </div>
-     
-      <div class="slogan">
-            Discover stays <br />
-            to live, work or just relax
-      </div>
-
-      <div class="signature">
-          <div class="text-1">Your destination or hotel name</div> 
-          <div class="text-2">Check-in &#8212; Check-out</div>
-      </div>
-
-      <form action="/" method="get">
-        <fieldset class="form">
-          <div class="place-form text-place-form"><input type="text" name="place" placeholder="New York" required /></div>
-          <div class="date-form"><input type="date" name="check-in" /><input type="date" name="check-out" /></div>
-          <div class="guests-form"><input type="text" name="guests" /></div>
-          <button class="button text-button">Search</button>
-        </fieldset>
-      </form>
-    </div>
     </div>
 
     <div class="offers-section">

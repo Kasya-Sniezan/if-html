@@ -1,40 +1,73 @@
 @import url("../styles/fonts.css");
 
-.top-section {
-  background-image: url("../image/castelmezzano-background.svg");
-  background-position: 50% 0%;
+.background {
+  background-image: url("/image/castelmezzano-background.svg");
+  background-position: top center;
   background-repeat: no-repeat;
-  width: 1440px;
+  width: 100%;
+}
+
+.top-section {
+  max-width: 1440px;
   height: 900px;
   align-self: center;
   margin: 0 auto;
+  padding-block-start: 51px;
 }
 
 .item-header-wrapper {
   display: flex;
-  padding-block-start: 57px;
-  height: 28px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  justify-content: center;
+  margin-block-end: 12px;
+}
+
+.logo {
+  padding-left: 104px;
+  width: 205px;
+  height: 40px;
 }
 
 .first-item-header {
   width: 59px;
-  padding-right: 24px;
-  padding-left: 993px;
+  line-height: 40px;
+  padding-left: 684px;
   text-decoration: none;
   color: #ffffff;
 }
 
 .second-item-header {
   width: 118px;
-  padding-right: 48px;
+  padding-left: 24px;
+  line-height: 40px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.night-theme {
+  padding-left: 48px;
+  padding-top: 5px;
+}
+
+.account {
+  padding-left: 24px;
+}
+
+.small-hr {
+  width: 50px;
+  height: 4px;
+  margin-left: 998px;
+  background-color: #f5bd41;
+}
+
+.page {
+  height: 487px;
+  margin: 0 auto;
 }
 
 .slogan {
@@ -74,6 +107,8 @@
 }
 
 .form {
+  max-width: 1232px;
+  margin: 0 auto;
   display: flex;
   width: 1040px;
   height: 64px;
@@ -81,28 +116,23 @@
   border: 3px solid #f3f3f4;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-inline-start: 104px;
-  margin-inline-end: 104px;
   padding: 0px;
 }
 
 .place-form {
-  width: 463px;
   padding: 0px;
-}
-
-.text-place-form {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
+  width: 463px;
+  height: 64px;
+  padding: 0px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-block-start: -3px;
 }
 
 .date-form {
   display: flex;
-  width: 259px;
+  width: 129px;
   height: 64px;
   border: 3px solid #f5bd41;
   box-sizing: border-box;
@@ -116,6 +146,54 @@
   height: 64px;
   padding: 0px;
   margin-block-start: -3px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+::-moz-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+:-moz-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+:-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+.input:placeholder-shown {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
 }
 
 .button {
@@ -123,6 +201,7 @@
   height: 64px;
 
   background: #3077c6;
+  box-sizing: border-box;
   border-radius: 8px;
   margin-block-start: -3px;
   padding: 0px;
@@ -138,6 +217,11 @@
   text-align: center;
   color: #ffffff;
   padding: 20px 57px;
+}
+
+.icons {
+  text-align: center;
+  margin-block-start: 120px;
 }
 
 .offers-section {
@@ -163,8 +247,6 @@
 
   width: 100px;
   height: 4px;
-  top: 1087px;
-  left: 670px;
   margin-block-end: 85px;
 }
 
