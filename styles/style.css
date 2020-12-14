@@ -74,15 +74,15 @@
 }
 
 .page {
+  width: 1232px;
   height: 487px;
   margin: 0 auto;
+  margin-block-start: 196px;
 }
 
 .slogan {
   width: 542px;
   height: 118px;
-  padding-left: 104px;
-  padding-top: 293px;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -100,18 +100,15 @@
   font-size: 18px;
   line-height: 21px;
   display: flex;
-  margin-top: 100px;
-  margin-bottom: 24px;
+  margin-block-start: 100px;
+  margin-block-end: 24px;
 
   color: #ffffff;
 }
 
-.text-1 {
-  margin-left: 128px;
-}
-
-.text-2 {
-  margin-left: 221px;
+.text {
+  padding-left: 24px;
+  padding-right: 221px;
 }
 
 .form {
@@ -228,8 +225,8 @@
 }
 
 .icons {
-  text-align: center;
   margin-block-start: 120px;
+  padding-left: 481px;
 }
 
 .offers-section {
