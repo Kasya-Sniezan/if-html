@@ -1,7 +1,237 @@
 @import url("../styles/fonts.css");
 
-.body-div {
+.background {
+  background-image: url("../image/castelmezzano-background.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 900px;
+}
+
+.top-section {
+  max-width: 1440px;
+  height: 900px;
+  align-self: center;
+  margin: 0 auto;
+  padding-block-start: 51px;
+}
+
+.item-header-wrapper {
+  width: 1232px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.sprite {
+  width: 205px;
+  height: 40px;
+  background-image: url("../image/sprite.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.first-item-header {
+  width: 59px;
+  line-height: 40px;
+  padding-left: 644px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.second-item-header {
+  width: 118px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.night-theme {
+  width: 30px;
+  background-repeat: no-repeat;
+  background-position: -266px 0px;
+}
+
+.account {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: -357px 0px;
+}
+
+.small-hr {
+  width: 50px;
+  height: 4px;
+  margin: 0 auto;
+  margin-left: 991px;
+  background-color: #f5bd41;
+}
+
+.page {
+  width: 1232px;
+  height: 487px;
+  margin: 0 auto;
+  margin-block-start: 196px;
+}
+
+.slogan {
+  width: 542px;
+  height: 118px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+
+  color: #ffffff;
+}
+
+.signature {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  margin-block-start: 100px;
+  margin-block-end: 24px;
+
+  color: #ffffff;
+}
+
+.text {
+  padding-left: 24px;
+  padding-right: 221px;
+}
+
+.form {
+  max-width: 1232px;
+  margin: 0 auto;
+  display: flex;
+  width: 1040px;
+  height: 64px;
+  background: #ffffff;
+  border: 3px solid #f3f3f4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0px;
+}
+
+.place-form {
+  padding: 0px;
+  width: 463px;
+  height: 64px;
+  padding: 0px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-block-start: -3px;
+}
+
+.date-form {
+  display: flex;
+  width: 129px;
+  height: 64px;
+  border: 3px solid #f5bd41;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-block-start: -3px;
+  padding: 0px;
+}
+
+.guests-form {
+  width: 314px;
+  height: 64px;
+  padding: 0px;
+  margin-block-start: -3px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+:-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+.input:placeholder-shown {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+.button {
+  width: 192px;
+  height: 64px;
+
+  background: #3077c6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-block-start: -3px;
+  padding: 0px;
+  margin-inline-end: -4px;
+}
+
+.text-button {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 57px;
+}
+
+.icons {
+  margin-block-start: 120px;
+  padding-left: 481px;
+}
+
+.offers-section {
   background-color: #ffffff;
+  margin-block-start: 120px;
 }
 
 .heading {
@@ -14,7 +244,6 @@
 
   line-height: 47px;
   margin-block-end: 20px;
-  margin-block-start: 120px;
 }
 
 .hr {
@@ -23,8 +252,6 @@
 
   width: 100px;
   height: 4px;
-  top: 1087px;
-  left: 670px;
   margin-block-end: 85px;
 }
 
@@ -51,6 +278,22 @@
   display: flex;
   align-items: center;
   margin-bottom: 48px;
+}
+
+.headphone {
+  background-position: 8px -71px;
+}
+
+.messages {
+  background-position: -107px -71px;
+}
+
+.devices {
+  background-position: -246px -71px;
+}
+
+.like {
+  background-position: -385px -71px;
 }
 
 .item-text {
