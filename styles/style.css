@@ -1,7 +1,14 @@
 @import url("../styles/fonts.css");
 
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 .background {
-  background-image: url("../image/castelmezzano-background.svg");
+  background-image: url("../image/castelmezzano-compress.webp");
   background-position: top center;
   background-repeat: no-repeat;
   width: 100%;
@@ -10,7 +17,6 @@
 
 .top-section {
   max-width: 1440px;
-  height: 900px;
   align-self: center;
   margin: 0 auto;
   padding-block-start: 51px;
@@ -30,24 +36,17 @@
   line-height: 28px;
 }
 
-.sprite {
-  width: 205px;
-  height: 40px;
-  background-image: url("../image/sprite.svg");
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-}
-
 .first-item-header {
   width: 59px;
   line-height: 40px;
-  padding-left: 644px;
+  padding-left: 684px;
   text-decoration: none;
   color: #ffffff;
 }
 
 .second-item-header {
   width: 118px;
+  padding-left: 24px;
   line-height: 40px;
   text-decoration: none;
   color: #ffffff;
@@ -55,21 +54,19 @@
 
 .night-theme {
   width: 30px;
-  background-repeat: no-repeat;
-  background-position: -266px 0px;
+  padding-left: 48px;
+  padding-right: 24px;
 }
 
-.account {
+.account-circle {
   width: 40px;
-  background-repeat: no-repeat;
-  background-position: -357px 0px;
 }
 
 .small-hr {
   width: 50px;
   height: 4px;
   margin: 0 auto;
-  margin-left: 991px;
+  margin-left: 998px;
   background-color: #f5bd41;
 }
 
@@ -278,22 +275,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 48px;
-}
-
-.headphone {
-  background-position: 8px -71px;
-}
-
-.messages {
-  background-position: -107px -71px;
-}
-
-.devices {
-  background-position: -246px -71px;
-}
-
-.like {
-  background-position: -385px -71px;
 }
 
 .item-text {
