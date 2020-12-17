@@ -69,147 +69,171 @@
       </symbol>
     </svg>
 
-    <div class="background">
-      <div class="top-section">
-        <div class="item-header-wrapper">
-          <div class="logo">
+    <div class="main-page">
+      <div class="header">
+        <div class="header_content-inner">
+          <div>
             <img src="./image/logo-compress.svg" alt="Logo" />
           </div>
-          <div><a href="index.html" class="first-item-header">Stays</a></div>
           <div>
-            <a href="index.html" class="second-item-header">Attractions</a>
+            <a href="index.html" class="header__text header_wrapper-1">Stays</a>
           </div>
-          <svg class="night-theme">
+          <div>
+            <a href="index.html" class="header__text header_wrapper-2"
+              >Attractions</a
+            >
+          </div>
+          <svg class="header__icon-1">
             <use href="#night-theme" />
           </svg>
-          <svg class="account-circle">
+          <svg class="header__icon-2">
             <use href="#account-circle" />
           </svg>
         </div>
+        <hr class="header__line" />
+      </div>
 
-        <hr class="small-hr" />
-        <div class="page">
-          <div class="slogan">
-            Discover stays <br />
-            to live, work or just relax
+      <div class="section">
+        <div class="section__slogan">
+          Discover stays <br />
+          to live, work or just relax
+        </div>
+        <div class="section__signature">
+          <div class="section_signature-text-padding">
+            Your destination or hotel name
           </div>
-          <div class="signature">
-            <div class="text">Your destination or hotel name</div>
-            <div>Check-in &#8212; Check-out</div>
-          </div>
-          <form action="/" method="get">
-            <fieldset class="form">
-              <input
-                type="text"
-                name="place"
-                placeholder="New York"
-                required
-                class="place-form"
-              />
-              <input type="date" name="date" class="date-form" />
-              <input type="date" name="date" class="date-form" />
-              <input
-                type="text"
-                name="guests"
-                placeholder="2 Adults &#8212; 0 Children &#8212; 1 Room"
-                required
-                class="guests-form"
-              />
-              <button class="button text-button">Search</button>
-            </fieldset>
-          </form>
-          <div class="icons">
-            <img src="./image/apps.svg" alt="Apps" />
-          </div>
+          <div>Check-in &#8212; Check-out</div>
+        </div>
+        <form action="/" method="get">
+          <fieldset class="section__form">
+            <input
+              type="text"
+              name="place"
+              placeholder="New York"
+              required
+              class="section__input-form__input--city"
+            />
+            <input
+              type="date"
+              name="date"
+              class="section__input-form__input--date"
+            />
+            <input
+              type="date"
+              name="date"
+              class="section__input-form__input--date"
+            />
+            <input
+              type="text"
+              name="guests"
+              placeholder="2 Adults &#8212; 0 Children &#8212; 1 Room"
+              required
+              class="section__input-form__input--guests"
+            />
+            <button
+              class="section__button-form section__button-form__button--text"
+            >
+              Search
+            </button>
+          </fieldset>
+        </form>
+        <div class="section__icons">
+          <img src="./image/apps-compress.svg" alt="Apps" />
         </div>
       </div>
     </div>
 
-    <div class="offers-section">
-      <h2 class="heading">What do we offer</h2>
+    <div class="offers-block">
+      <h2 class="offers-block__heading">What do we offer</h2>
 
-      <hr class="hr" />
+      <hr class="offers-block__line" />
 
-      <div class="box">
-        <div class="item">
-          <svg class="img-wrapper">
+      <div class="offers-block__box">
+        <div class="offers-block_box-inner">
+          <svg class="offers-block__img-box">
             <use href="#support" />
           </svg>
-          <span class="item-text">Support 24/7</span>
+          <span class="offers-block__text-box">Support 24/7</span>
         </div>
 
-        <div class="item">
-          <svg class="img-wrapper">
+        <div class="offers-block__box_inner">
+          <svg class="offers-block__img-box">
             <use href="#message" />
           </svg>
-          <span class="item-text">Communicate directly</span>
+          <span class="offers-block__text-box">Communicate directly</span>
         </div>
 
-        <div class="item">
-          <svg class="img-wrapper">
+        <div class="offers-block__box_inner">
+          <svg class="offers-block__img-box">
             <use href="#device" />
           </svg>
-          <span class="item-text">Book online</span>
+          <span class="offers-block__text-box">Book online</span>
         </div>
 
-        <div class="item">
-          <svg class="img-wrapper">
+        <div class="offers-block__box_inner">
+          <svg class="offers-block__img-box">
             <use href="#like" />
           </svg>
-          <span class="item-text">Real guest reviews</span>
+          <span class="offers-block__text-box">Real guest reviews</span>
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <div class="container">
-        <div class="list-wrapper">
-          <ul class="list-about">
+      <div class="footer__container">
+        <div class="footer__list-container">
+          <ul class="footer_list-container_wrap-1">
             <li>
-              <a href="index.html" class="footer-links first-list-element"
+              <a href="index.html" class="footer__text-list footer__head-text"
                 >About</a
               >
             </li>
             <li>
-              <a href="index.html" class="footer-links">How Triphouse works</a>
+              <a href="index.html" class="footer__text-list"
+                >How Triphouse works</a
+              >
             </li>
-            <li><a href="index.html" class="footer-links">Careers</a></li>
-            <li><a href="index.html" class="footer-links">Privacy</a></li>
-            <li><a href="index.html" class="footer-links">Terms</a></li>
+            <li><a href="index.html" class="footer__text-list">Careers</a></li>
+            <li><a href="index.html" class="footer__text-list">Privacy</a></li>
+            <li><a href="index.html" class="footer__text-list">Terms</a></li>
           </ul>
 
-          <ul class="list-property-type">
+          <ul class="footer_list-container_wrap-2">
             <li>
-              <a href="index.html" class="footer-links first-list-element"
+              <a href="index.html" class="footer__text-list footer__head-text"
                 >Property types</a
               >
             </li>
-            <li><a href="index.html" class="footer-links">Guest houses</a></li>
-            <li><a href="index.html" class="footer-links">Hotels</a></li>
             <li>
-              <a href="index.html" class="footer-links">Apartments</a>
+              <a href="index.html" class="footer__text-list">Guest houses</a>
             </li>
-            <li><a href="index.html" class="footer-links">Villas</a></li>
-            <li><a href="index.html" class="footer-links">Holiday homes</a></li>
-            <li><a href="index.html" class="footer-links">Hostels</a></li>
+            <li><a href="index.html" class="footer__text-list">Hotels</a></li>
+            <li>
+              <a href="index.html" class="footer__text-list">Apartments</a>
+            </li>
+            <li><a href="index.html" class="footer__text-list">Villas</a></li>
+            <li>
+              <a href="index.html" class="footer__text-list">Holiday homes</a>
+            </li>
+            <li><a href="index.html" class="footer__text-list">Hostels</a></li>
           </ul>
 
-          <ul class="list-support">
+          <ul class="footer_list-container_wrap-3">
             <li>
-              <a href="index.html" class="footer-links first-list-element"
+              <a href="index.html" class="footer__text-list footer__head-text"
                 >Support</a
               >
             </li>
             <li>
-              <a href="index.html" class="footer-links"
+              <a href="index.html" class="footer__text-list"
                 >Contact Customer Service</a
               >
             </li>
-            <li><a href="index.html" class="footer-links">FAQ</a></li>
+            <li><a href="index.html" class="footer__text-list">FAQ</a></li>
           </ul>
         </div>
 
-        <div class="text-copyright">
+        <div class="footer__text-copyright">
           &#169; 2020 Triphouse, Inc. All rights reserved
         </div>
       </div>
