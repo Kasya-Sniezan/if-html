@@ -7,133 +7,223 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="background">
-      <div class="top-section">
-        <div class="item-header-wrapper">
-          <div class="sprite"></div>
-          <div><a href="index.html" class="first-item-header">Stays</a></div>
-          <div>
-            <a href="index.html" class="second-item-header">Attractions</a>
-          </div>
-          <div class="sprite night-theme"></div>
-          <div class="sprite account"></div>
-        </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
+      <symbol id="night-theme" viewBox="0 0 30 30">
+        <path
+          d="M25.6101 10.6101V4.38992h-6.2202L15 0l-4.3899 4.38992H4.38992v6.22018L0 15l4.38992 4.3899v6.2202h6.22018L15 30l4.3899-4.3899h6.2202v-6.2202L30 15l-4.3899-4.3899zM15 22.9576c-1.1804 0-2.3077-.2653-3.3156-.7295 2.732-1.2599 4.6419-4.0185 4.6419-7.2281 0-3.2095-1.9099-5.96817-4.6419-7.22812 1.0079-.46419 2.1352-.72944 3.3156-.72944 4.3899 0 7.9576 3.56766 7.9576 7.95756S19.3899 22.9576 15 22.9576z"
+          fill="#fff"
+        />
+      </symbol>
+      <symbol id="account-circle" viewBox="0 0 40 40">
+        <path
+          d="M20 0C8.96 0 0 8.96 0 20s8.96 20 20 20 20-8.96 20-20S31.04 0 20 0zm0 6c3.32 0 6 2.68 6 6s-2.68 6-6 6-6-2.68-6-6 2.68-6 6-6zm0 28.4c-5 0-9.42-2.56-12-6.44.06-3.98 8-6.16 12-6.16 3.98 0 11.94 2.18 12 6.16-2.58 3.88-7 6.44-12 6.44z"
+          fill="#fff"
+        />
+      </symbol>
+      <symbol id="support" viewBox="0 0 76 92">
+        <path
+          d="M67.1667 54.3333V71h-8.3334V54.3333h8.3334zm-50 0V71H13c-2.2917 0-4.16667-1.875-4.16667-4.1667v-12.5h8.33337zM38 .166626C17.2917.166626.5 16.9583.5 37.6666v29.1667c0 6.9167 5.58333 12.5 12.5 12.5h12.5V46H8.83333v-8.3334C8.83333 21.5416 21.875 8.49996 38 8.49996S67.1667 21.5416 67.1667 37.6666V46H50.5v33.3333h16.6667V83.5H38v8.3333h25c6.9167 0 12.5-5.5833 12.5-12.5V37.6666C75.5 16.9583 58.7083.166626 38 .166626z"
+          fill="#3077C6"
+        />
+      </symbol>
+      <symbol id="message" viewBox="0 0 84 84">
+        <path
+          d="M54.5 8.66671V37.8334H13.5417l-4.87504 4.875V8.66671H54.5zM58.6667.333374H4.5C2.20833.333374.333328 2.20837.333328 4.50004V62.8334L17 46.1667h41.6667c2.2916 0 4.1666-1.875 4.1666-4.1667V4.50004c0-2.29167-1.875-4.166666-4.1666-4.166666zM79.5 17h-8.3333v37.5H17v8.3334C17 65.125 18.875 67 21.1667 67H67l16.6667 16.6667v-62.5C83.6667 18.875 81.7917 17 79.5 17z"
+          fill="#3077C6"
+        />
+      </symbol>
+      <symbol id="device" viewBox="0 0 100 67">
+        <path
+          d="M16.6667 8.99996h75V.666626h-75c-4.5834 0-8.33337 3.750004-8.33337 8.333334V54.8333H0v12.5h58.3333v-12.5H16.6667V8.99996zm79.1666 8.33334h-25c-2.2916 0-4.1666 1.875-4.1666 4.1667v41.6666c0 2.2917 1.875 4.1667 4.1666 4.1667h25c2.2917 0 4.1667-1.875 4.1667-4.1667V21.5c0-2.2917-1.875-4.1667-4.1667-4.1667zm-4.1666 37.5H75V25.6666h16.6667v29.1667z"
+          fill="#3077C6"
+        />
+      </symbol>
+      <symbol id="like" viewBox="0 0 92 84">
+        <path
+          d="M83.5 29.3333H57.2083l3.9584-19.0417.125-1.33331c0-1.70833-.7084-3.29166-1.8334-4.41666L55.0417.166626 27.625 27.625c-1.5417 1.5-2.4583 3.5833-2.4583 5.875v41.6666c0 4.5834 3.75 8.3334 8.3333 8.3334H71c3.4583 0 6.4167-2.0834 7.6667-5.0834L91.25 49.0416c.375-.9583.5833-1.9583.5833-3.0416v-8.3334c0-4.5833-3.75-8.3333-8.3333-8.3333zM83.5 46L71 75.1666H33.5V33.5l18.0833-18.0834-4.625 22.25H83.5V46zM.166656 33.5H16.8333v50H.166656v-50z"
+          fill="#3077C6"
+        />
+      </symbol>
+      <symbol id="user" viewBox="0 0 86 86">
+        <circle cx="43" cy="43" r="43" fill="#fff" />
+        <path
+          d="M46.6518 55.7484c0-2.0561.5115-4.0303 1.473-5.7897-1.3605-.7672-2.3629-1.2684-2.7823-1.473-.133-.0614-.2046-.1944-.2046-.3376v-8.081c1.0127-.6751 1.6878-1.831 1.6878-3.1403v-8.3777c0-4.1633-3.3756-7.5491-7.5491-7.5491h-1.8003c-4.1633 0-7.5491 3.3756-7.5491 7.5491v8.3777c0 1.3093.6751 2.4652 1.6878 3.1403v8.081c0 .1432-.0819.2762-.2046.3376-1.1559.5626-6.7512 3.3858-11.9374 7.6514-.9411.7672-1.473 1.9231-1.473 3.1403v5.7386h32.9787c-.2762-.2251-.5319-.4706-.7876-.7263-2.2811-2.2811-3.5393-5.3192-3.5393-8.5413z"
+          fill="#3077C6"
+        />
+        <path
+          d="M58.7324 46.4807c-5.1145 0-9.2676 4.153-9.2676 9.2675 0 5.1146 4.1531 9.2676 9.2676 9.2676 5.1146 0 9.2676-4.153 9.2676-9.2676 0-5.1145-4.1428-9.2675-9.2676-9.2675zm5.4215 10.6178h-4.0712v4.0712h-2.7005v-4.0712H53.311V54.398h4.0712v-4.0712h2.7005v4.0712h4.0712v2.7005z"
+          fill="#3077C6"
+        />
+      </symbol>
+      <symbol id="close-cross" viewBox="0 0 26 26">
+        <path
+          d="M26 1.4857L24.5144 0 13 11.5143 1.4857 0 0 1.4857 11.5143 13 0 24.5144 1.4857 26 13 14.4857 24.5144 26 26 24.5144 14.4857 13 26 1.4857z"
+          fill="#BFBFBF"
+        />
+      </symbol>
+      <symbol id="account-circle-large" viewBox="0 0 54 54">
+        <path
+          d="M27 .333374C12.28.333374.333313 12.28.333313 27S12.28 53.6667 27 53.6667C41.72 53.6667 53.6666 41.72 53.6666 27 53.6666 12.28 41.72.333374 27 .333374zm0 7.999996c4.4266 0 8 3.57333 8 8.00003 0 4.4266-3.5734 8-8 8-4.4267 0-8-3.5734-8-8 0-4.4267 3.5733-8.00003 8-8.00003zM27 46.2c-6.6667 0-12.56-3.4133-16-8.5866.08-5.3067 10.6666-8.2134 16-8.2134 5.3066 0 15.92 2.9067 16 8.2134C39.56 42.7867 33.6666 46.2 27 46.2z"
+          fill="#BFBFBF"
+        />
+      </symbol>
+    </svg>
 
-        <hr class="small-hr" />
-        <div class="page">
-          <div class="slogan">
-            Discover stays <br />
-            to live, work or just relax
+    <!-- <div class="main-page">
+      <div class="header">
+        <div class="header_content-inner">
+          <div>
+            <img src="./image/logo-compress.svg" alt="Logo" />
           </div>
-          <div class="signature">
-            <div class="text">Your destination or hotel name</div>
-            <div>Check-in &#8212; Check-out</div>
+          <div>
+            <a href="index.html" class="header__link header_wrapper-1">Stays</a>
           </div>
-          <form action="/" method="get">
-            <fieldset class="form">
-              <input
-                type="text"
-                name="place"
-                placeholder="New York"
-                required
-                class="place-form"
-              />
-              <input type="date" name="date" class="date-form" />
-              <input type="date" name="date" class="date-form" />
-              <input
-                type="text"
-                name="guests"
-                placeholder="2 Adults &#8212; 0 Children &#8212; 1 Room"
-                required
-                class="guests-form"
-              />
-              <button class="button text-button">Search</button>
-            </fieldset>
-          </form>
-          <div class="icons">
-            <img src="./image/apps.svg" alt="Apps" />
+          <div>
+            <a href="index.html" class="header__link header_wrapper-2"
+              >Attractions</a
+            >
           </div>
+          <svg class="header__icon-1">
+            <use href="#night-theme" />
+          </svg>
+          <svg class="header__icon-2">
+            <use href="#account-circle" />
+          </svg>
+        </div>
+        <hr class="header__line" />
+      </div>
+
+      <div class="section">
+        <div class="section__slogan">
+          Discover stays <br />
+          to live, work or just relax
+        </div>
+        <div class="section__signature">
+          <div class="section_signature-text-padding">
+            Your destination or hotel name
+          </div>
+          <div>Check-in &#8212; Check-out</div>
+        </div>
+        <form action="/" method="get">
+          <fieldset class="section__form">
+            <input
+              type="text"
+              name="place"
+              placeholder="New York"
+              required
+              class="section__input-section__input--city"
+            />
+            <input
+              type="date"
+              name="date"
+              class="section__input-section__input--date"
+            />
+            <input
+              type="date"
+              name="date"
+              class="section__input-section__input--date"
+            />
+            <input
+              type="text"
+              name="guests"
+              placeholder="2 Adults &#8212; 0 Children &#8212; 1 Room"
+              required
+              class="section__input-section__input--guests"
+            />
+            <button class="button button__text">Search</button>
+          </fieldset>
+        </form>
+        <div class="section__icons">
+          <img src="./image/apps-compress.svg" alt="Apps" />
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="offers-section">
-      <h2 class="heading">What do we offer</h2>
+    <div class="offers-block">
+      <h2 class="offers-block__heading">What do we offer</h2>
 
-      <hr class="hr" />
+      <hr class="offers-block__line" />
 
-      <div class="box">
-        <div class="item">
-          <div class="sprite img-wrapper headphone"></div>
-          <span class="item-text">Support 24/7</span>
+      <div class="offers-block__box">
+        <div class="offers-block__item col-s-6 col-12">
+          <svg class="offers-block__img-box">
+            <use href="#support" />
+          </svg>
+          <div class="offers-block__text">Support 24/7</div>
         </div>
 
-        <div class="item">
-          <div class="sprite img-wrapper messages"></div>
-          <span class="item-text">Communicate directly</span>
+        <div class="offers-block__item col-s-6 col-12">
+          <svg class="offers-block__img-box">
+            <use href="#message" />
+          </svg>
+          <div class="offers-block__text">Communicate directly</div>
         </div>
 
-        <div class="item">
-          <div class="sprite img-wrapper devices"></div>
-          <span class="item-text">Book online</span>
+        <div class="offers-block__item col-s-6 col-12">
+          <svg class="offers-block__img-box">
+            <use href="#device" />
+          </svg>
+          <div class="offers-block__text">Book online</div>
         </div>
 
-        <div class="item">
-          <div class="sprite img-wrapper like"></div>
-          <span class="item-text">Real guest reviews</span>
+        <div class="offers-block__item col-s-6 col-12">
+          <svg class="offers-block__img-box">
+            <use href="#like" />
+          </svg>
+          <div class="offers-block__text">Real guest reviews</div>
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <div class="container">
-        <div class="list-wrapper">
-          <ul class="list-about">
+      <div class="footer__container">
+        <div class="logo-no">
+          <img src="./image/logo-small.svg" alt="Logo" />
+        </div>
+        <div class="footer__list-container">
+          <ul class="footer_list-container_wrap-1">
             <li>
-              <a href="index.html" class="footer-links first-list-element"
-                >About</a
-              >
+              <a href="index.html" class="footer__head-text">About</a>
             </li>
             <li>
-              <a href="index.html" class="footer-links">How Triphouse works</a>
+              <a href="index.html" class="footer__item">How Triphouse works</a>
             </li>
-            <li><a href="index.html" class="footer-links">Careers</a></li>
-            <li><a href="index.html" class="footer-links">Privacy</a></li>
-            <li><a href="index.html" class="footer-links">Terms</a></li>
+            <li><a href="index.html" class="footer__item">Careers</a></li>
+            <li><a href="index.html" class="footer__item">Privacy</a></li>
+            <li><a href="index.html" class="footer__item">Terms</a></li>
           </ul>
 
-          <ul class="list-property-type">
+          <ul class="footer_list-container_wrap-2">
             <li>
-              <a href="index.html" class="footer-links first-list-element"
-                >Property types</a
-              >
+              <a href="index.html" class="footer__head-text">Property types</a>
             </li>
-            <li><a href="index.html" class="footer-links">Guest houses</a></li>
-            <li><a href="index.html" class="footer-links">Hotels</a></li>
             <li>
-              <a href="index.html" class="footer-links">Apartments</a>
+              <a href="index.html" class="footer__item">Guest houses</a>
             </li>
-            <li><a href="index.html" class="footer-links">Villas</a></li>
-            <li><a href="index.html" class="footer-links">Holiday homes</a></li>
-            <li><a href="index.html" class="footer-links">Hostels</a></li>
+            <li><a href="index.html" class="footer__item">Hotels</a></li>
+            <li>
+              <a href="index.html" class="footer__item">Apartments</a>
+            </li>
+            <li><a href="index.html" class="footer__item">Villas</a></li>
+            <li>
+              <a href="index.html" class="footer__item">Holiday homes</a>
+            </li>
+            <li><a href="index.html" class="footer__item">Hostels</a></li>
           </ul>
 
-          <ul class="list-support">
+          <ul class="footer_list-container_wrap-3">
             <li>
-              <a href="index.html" class="footer-links first-list-element"
-                >Support</a
-              >
+              <a href="index.html>" class="footer__head-text">Support</a>
             </li>
             <li>
-              <a href="index.html" class="footer-links"
+              <a href="index.html" class="footer__item"
                 >Contact Customer Service</a
               >
             </li>
-            <li><a href="index.html" class="footer-links">FAQ</a></li>
+            <li><a href="index.html" class="footer__item">FAQ</a></li>
           </ul>
         </div>
-
-        <div class="text-copyright">
+        <div class="footer__copyright">
           &#169; 2020 Triphouse, Inc. All rights reserved
         </div>
       </div>
