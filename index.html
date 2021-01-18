@@ -90,7 +90,7 @@
     <div class="top-section">
       <header>
         <div class="row row--header">
-          <div class="logo__col col-7">
+          <div class="logo__col col-md-8 col-7">
             <svg class="header__logo">
               <use href="#logo" />
             </svg>
@@ -111,8 +111,8 @@
               <use href="#account-circle" />
             </svg>
           </div>
-          <div>
-            <svg class="header__menu">
+          <div class="icon--third--wrap">
+            <svg class="header__icon--third">
               <use href="#menu" />
             </svg>
           </div>
@@ -127,65 +127,55 @@
           Discover stays <br />
           to live, work or just relax
         </div>
-        <div class="section__signature">
-          <div class="section_signature-text-padding">
-            Your destination or hotel name
-          </div>
-          <div class="section_signature-text-margin">
-            Check-in &#8212; Check-out
-          </div>
-        </div>
 
         <div class="container--form col-md-12 col-lg-12 col-12">
           <form action="/" method="get">
             <div class="row--form">
-              <input
-                type="text"
-                name="place"
-                placeholder="New York"
-                required
-                class="col--place"
-              />
-              <div class="mobile-view">
-                <svg class="mobile-search-icon">
-                  <use href="#search-icon" />
-                </svg>
+              <div
+                class="input-place--wrap col--place col-md-12 col-lg-12 col-12"
+              >
                 <input
                   type="text"
                   name="place"
-                  placeholder="Your destination or hotel name"
+                  class="col--place col-md-12 col-lg-12 col-12"
                   required
-                  class="col-md-12 col-lg-12 col-12"
                 />
+                <label class="label--place"
+                  >Your destination or hotel name</label
+                >
               </div>
 
               <div class="input-date--wrap">
-                <input
-                  type="date"
-                  name="date"
-                  class="col--date col-md-6 col-lg-6 col-6"
-                />
-                <input
-                  type="date"
-                  name="date"
-                  class="col--date col-md-6 col-lg-6 col-6"
-                />
+                <div class="label--date--wrap-first">
+                  <input
+                    type="date"
+                    name="date"
+                    class="col--date col-md-12 col-lg-12 col-12"
+                    required
+                  />
+                  <label class="label--date--first">Check-in</label>
+                </div>
+                <div class="label--date--wrap-second">
+                  <input
+                    type="date"
+                    name="date"
+                    class="col--date col-md-12 col-lg-12 col-12"
+                    required
+                  />
+                  <label class="label--date--second">Check-out</label>
+                </div>
               </div>
+
               <input
                 type="text"
-                name="guests"
-                placeholder="2 Adults &#8212; 0 Children &#8212; 1 Room"
+                name="quests"
+                class="col--guests col-md-12 col-lg-12 col-12"
                 required
-                class="col--guests"
               />
-              <input
-                type="text"
-                name="guests"
-                row="2"
-                placeholder="Adults &#10; 2 &#448; Children &#10; 0 &#448; Room &#10; 1"
-                required
-                class="mobile-view col-md-12 col-md-12 col-12"
-              />
+              <label class="label--quests"
+                >2 Adults &#8212; 0 Children &#8212; 1 Room</label
+              >
+
               <button
                 class="col--button button__text col-md-12 col-md-12 col-12"
               >

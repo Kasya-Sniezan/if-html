@@ -75,8 +75,14 @@ header {
   height: 40px;
 }
 
-.header__menu {
-  display: none;
+.icon--third--wrap {
+  width: 0;
+  height: 0;
+}
+
+.header__icon--third {
+  width: 0;
+  width: 0;
 }
 
 .line--wrap {
@@ -100,23 +106,7 @@ section {
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-}
-
-.section__signature {
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  padding: 100px 0px 24px 0px;
-}
-
-.section_signature-text-padding {
-  padding-left: 2%;
-  padding-right: 16%;
-  margin: 0;
-}
-
-.section_signature-text-margin {
-  margin: 0;
+  margin-bottom: 145px;
 }
 
 .container--form {
@@ -131,62 +121,111 @@ section {
 .row--form {
   display: flex;
   justify-content: flex-start;
+  position: relative;
 }
 
 input {
   border: none;
   border-radius: 8px;
+  height: 64px;
   margin-top: -3px;
+  padding-left: 24px;
+  font-size: 18px;
+}
+
+label {
+  position: absolute;
+  pointer-events: none;
+  color: #383838;
+  font-size: 18px;
+  transition: 0.2s ease all;
 }
 
 .col--place {
   width: 36%;
 }
 
-.mobile-view {
-  display: none;
+input:focus ~ .label--place,
+input:not(:focus):valid ~ .label--place {
+  top: -48px;
+  left: 24px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.label--place {
+  left: 24px;
+  top: 20px;
 }
 
 .input-date--wrap {
   display: flex;
+  width: 22%;
+}
+
+.label--date--wrap-first {
+  width: 50%;
+  position: relative;
+}
+
+.label--date--wrap-second {
+  width: 50%;
+  position: relative;
 }
 
 .col--date {
+  width: 100%;
   border: 3px solid #f5bd41;
+}
+
+input:focus ~ .label--date--first,
+input:not(:focus):valid ~ .label--date--first {
+  top: -48px;
+  left: 24px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.label--date--first {
+  left: 24px;
+  top: 22px;
+}
+
+input:focus ~ .label--date--second,
+input:not(:focus):valid ~ .label--date--second {
+  top: -48px;
+  left: 24px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.label--date--second {
+  left: 24px;
+  top: 22px;
+}
+
+input[type="date" i] {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-inline-start: 24px;
 }
 
 .col--guests {
   width: 27%;
 }
 
-::-webkit-input-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  padding-left: 24px;
+input:focus ~ .label--quests,
+input:not(:focus):valid ~ .label--quests {
+  top: -48px;
+  left: 713px;
+  color: #ffffff;
+  opacity: 1;
 }
 
-::-moz-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  padding-left: 24px;
-}
-
-:-moz-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  padding-left: 24px;
-}
-
-:-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  padding-left: 24px;
-}
-
-.input:placeholder-shown {
-  font-size: 18px;
-  line-height: 21px;
-  padding-left: 24px;
+.label--quests {
+  left: 713px;
+  top: 20px;
 }
 
 button {
@@ -237,6 +276,7 @@ button {
 .advantages__line {
   width: 100px;
   height: 4px;
+  border: 0px;
   background-color: #f5bd41;
   margin: 0 auto;
   margin-bottom: 80px;
@@ -317,7 +357,6 @@ footer {
 }
 
 @media only screen and (max-width: 1232px) {
-  /* for tablets: 12 columns grid*/
   .col-lg-6 {
     width: 50%;
   }
@@ -328,11 +367,7 @@ footer {
   /* top-section */
   .link__col--first,
   .link__col--second,
-  .header__line,
-  .section__signature,
-  .mobile-search-icon,
-  .col--place,
-  .col--guests {
+  .header__line {
     display: none;
   }
 
@@ -347,25 +382,33 @@ footer {
   }
 
   header {
-    padding: 30px 16px 0px 16px;
+    padding: 52px 30px 0px 30px;
   }
 
   .icon__col--first {
-    width: 3%;
+    width: 0%;
   }
 
   .icon__col--second {
     width: 3%;
   }
 
-  .header__menu {
-    width: 32px;
-    height: 24px;
-    display: flex;
+  .icon--third--wrap {
+    width: 24px;
+    height: 28px;
+    position: relative;
+  }
+
+  .header__icon--third {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: -3px;
+    right: 0;
   }
 
   section {
-    padding: 52px 16px 40px 16px;
+    padding: 52px 30px 120px 30px;
   }
 
   .section__slogan {
@@ -375,11 +418,12 @@ footer {
   }
 
   .container--form {
-    height: 228px;
+    height: 232px;
     background: #f5bd41;
-    border: 8px solid #f5bd41;
+    border: 0px;
     border-radius: 0px;
-    margin-bottom: 32px;
+    margin-bottom: 60px;
+    padding: 8px;
   }
 
   .row--form {
@@ -393,47 +437,116 @@ footer {
     margin-bottom: 8px;
     font-size: 15px;
     font-weight: 500;
-    line-height: 17.5px;
+    line-height: 18px;
+    padding-top: 24px;
     padding-left: 36px;
     color: #383838;
   }
 
-  .mobile-view {
-    display: flex;
+  label {
+    font-size: 12px;
   }
 
-  ::-webkit-input-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
+  .input-place--wrap {
+    position: relative;
   }
 
-  ::-moz-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
+  .input-place--wrap::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    width: 16px;
+    height: 16px;
+    background: url("../image/search.svg");
   }
 
-  :-moz-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
+  input:focus ~ .label--place,
+  input:not(:focus):valid ~ .label--place {
+    top: 6px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
   }
 
-  :-ms-input-placeholder {
+  .label--place {
+    left: 36px;
+    top: 15px;
     font-size: 15px;
     font-weight: 500;
-    line-height: 17.5px;
-  }
-
-  .input:placeholder-shown {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
   }
 
   .input-date--wrap {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+  }
+
+  .label--date--wrap-first {
+    width: 49%;
+  }
+
+  .label--date--wrap-second {
+    width: 49%;
+  }
+
+  input[type="date" i] {
+    align-items: center;
+    display: inline-flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-inline-start: 8px;
+    border: 0px;
+  }
+
+  input:focus ~ .label--date--first,
+  input:not(:focus):valid ~ .label--date--first {
+    top: 6px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--date--first {
+    left: 36px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .label--date--second,
+  input:not(:focus):valid ~ .label--date--second {
+    top: 6px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--date--second {
+    left: 36px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .label--quests,
+  input:not(:focus):valid ~ .label--quests {
+    top: 109px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--quests {
+    left: 36px;
+    top: 118px;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   button {
@@ -451,7 +564,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  /* for tablets: 12 columns grid*/
   .col-md-1 {
     width: 8.33%;
   }
@@ -492,10 +604,7 @@ footer {
   /* top-section */
   .link__col--first,
   .link__col--second,
-  .header__line,
-  .section__signature,
-  .col--place,
-  .col--guests {
+  .header__line {
     display: none;
   }
 
@@ -536,10 +645,16 @@ footer {
     height: 24px;
   }
 
-  .header__menu {
+  .icon--third--wrap {
+    position: relative;
+  }
+
+  .header__icon--third {
     width: 24px;
     height: 16px;
-    display: flex;
+    position: absolute;
+    top: 4px;
+    right: 0;
   }
 
   section {
@@ -553,11 +668,12 @@ footer {
   }
 
   .container--form {
-    height: 228px;
+    height: 232px;
     background: #f5bd41;
-    border: 8px solid #f5bd41;
+    border: 0px;
     border-radius: 0px;
     margin-bottom: 32px;
+    padding: 8px;
   }
 
   .row--form {
@@ -571,55 +687,116 @@ footer {
     margin-bottom: 8px;
     font-size: 15px;
     font-weight: 500;
-    line-height: 17.5px;
+    line-height: 18px;
+    padding-top: 24px;
     padding-left: 36px;
     color: #383838;
   }
 
-  .mobile-view {
-    display: flex;
+  label {
+    font-size: 12px;
   }
 
-  .mobile-search-icon {
+  .input-place--wrap {
+    position: relative;
+  }
+
+  .input-place--wrap::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 8px;
     width: 16px;
     height: 16px;
-    position: absolute;
-    top: 230px;
-    left: 49px;
+    background: url("../image/search.svg");
   }
 
-  ::-webkit-input-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
+  input:focus ~ .label--place,
+  input:not(:focus):valid ~ .label--place {
+    top: 6px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
   }
 
-  ::-moz-placeholder {
+  .label--place {
+    left: 36px;
+    top: 15px;
     font-size: 15px;
     font-weight: 500;
-    line-height: 17.5px;
-  }
-
-  :-moz-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
-  }
-
-  :-ms-input-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
-  }
-
-  .input:placeholder-shown {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
   }
 
   .input-date--wrap {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+  }
+
+  .label--date--wrap-first {
+    width: 49%;
+  }
+
+  .label--date--wrap-second {
+    width: 49%;
+  }
+
+  input[type="date" i] {
+    align-items: center;
+    display: inline-flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-inline-start: 8px;
+    border: 0px;
+  }
+
+  input:focus ~ .label--date--first,
+  input:not(:focus):valid ~ .label--date--first {
+    top: 6px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--date--first {
+    left: 36px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .label--date--second,
+  input:not(:focus):valid ~ .label--date--second {
+    top: 6px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--date--second {
+    left: 36px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .label--quests,
+  input:not(:focus):valid ~ .label--quests {
+    top: 109px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--quests {
+    left: 36px;
+    top: 118px;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   button {
@@ -695,7 +872,6 @@ footer {
 }
 
 @media only screen and (max-width: 360px) {
-  /* for mobile: 12 columns grid*/
   .col-1 {
     width: 8.33%;
   }
@@ -736,10 +912,7 @@ footer {
   /* top-section */
   .link__col--first,
   .link__col--second,
-  .header__line,
-  .section__signature,
-  .col--place,
-  .col--guests {
+  .header__line {
     display: none;
   }
 
@@ -767,7 +940,7 @@ footer {
   }
 
   .icon__col--second {
-    width: 3%;
+    width: 4%;
   }
 
   .header__icon--first {
@@ -780,10 +953,16 @@ footer {
     height: 24px;
   }
 
-  .header__menu {
+  .icon--third--wrap {
+    position: relative;
+  }
+
+  .header__icon--third {
     width: 24px;
     height: 16px;
-    display: flex;
+    position: absolute;
+    top: 4px;
+    right: 0;
   }
 
   section {
@@ -797,11 +976,12 @@ footer {
   }
 
   .container--form {
-    height: 228px;
+    height: 232px;
     background: #f5bd41;
-    border: 8px solid #f5bd41;
+    border: 0px;
     border-radius: 0px;
     margin-bottom: 32px;
+    padding: 8px;
   }
 
   .row--form {
@@ -815,60 +995,116 @@ footer {
     margin-bottom: 8px;
     font-size: 15px;
     font-weight: 500;
-    line-height: 17.5px;
+    line-height: 18px;
+    padding-top: 24px;
     padding-left: 8px;
     color: #383838;
   }
 
-  .mobile-view {
-    display: flex;
+  label {
+    font-size: 12px;
   }
 
-  .mobile-search-icon {
+  .input-place--wrap {
+    position: relative;
+  }
+
+  .input-place--wrap::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 8px;
     width: 16px;
     height: 16px;
-    position: absolute;
-    top: 214px;
+    background: url("../image/search.svg");
+  }
+
+  input:focus ~ .label--place,
+  input:not(:focus):valid ~ .label--place {
+    top: 6px;
     left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
   }
 
-  ::-webkit-input-placeholder {
+  .label--place {
+    left: 36px;
+    top: 15px;
     font-size: 15px;
     font-weight: 500;
-    line-height: 17.5px;
-    padding-left: 30px;
-  }
-
-  ::-moz-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
-    padding-left: 30px;
-  }
-
-  :-moz-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
-    padding-left: 30px;
-  }
-
-  :-ms-input-placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
-    padding-left: 30px;
-  }
-
-  .input:placeholder-shown {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 17.5px;
-    padding-left: 30px;
   }
 
   .input-date--wrap {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+  }
+
+  .label--date--wrap-first {
+    width: 49%;
+  }
+
+  .label--date--wrap-second {
+    width: 49%;
+  }
+
+  input[type="date" i] {
+    align-items: center;
+    display: inline-flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-inline-start: 8px;
+    border: 0px;
+  }
+
+  input:focus ~ .label--date--first,
+  input:not(:focus):valid ~ .label--date--first {
+    top: 6px;
+    left: 8px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--date--first {
+    left: 8px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .label--date--second,
+  input:not(:focus):valid ~ .label--date--second {
+    top: 6px;
+    left: 8px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--date--second {
+    left: 8px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .label--quests,
+  input:not(:focus):valid ~ .label--quests {
+    top: 109px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .label--quests {
+    left: 36px;
+    top: 118px;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   button {
