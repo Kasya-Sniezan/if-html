@@ -131,9 +131,7 @@
         <div class="container--form col-md-12 col-lg-12 col-12">
           <form action="/" method="get">
             <div class="row--form">
-              <div
-                class="input-place--wrap col--place col-md-12 col-lg-12 col-12"
-              >
+              <div class="input--place--wrap">
                 <input
                   type="text"
                   name="place"
@@ -145,11 +143,13 @@
                 >
               </div>
 
-              <div class="input-date--wrap">
+              <div class="input--date--wrap">
                 <div class="label--date--wrap-first">
                   <input
-                    type="date"
-                    name="date"
+                    type="text"
+                    id="date"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
                     class="col--date col-md-12 col-lg-12 col-12"
                     required
                   />
@@ -157,8 +157,10 @@
                 </div>
                 <div class="label--date--wrap-second">
                   <input
-                    type="date"
-                    name="date"
+                    type="text"
+                    id="date"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
                     class="col--date col-md-12 col-lg-12 col-12"
                     required
                   />

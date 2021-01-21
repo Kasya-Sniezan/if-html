@@ -127,10 +127,17 @@ section {
 input {
   border: none;
   border-radius: 8px;
-  height: 64px;
-  margin-top: -3px;
   padding-left: 24px;
   font-size: 18px;
+}
+
+.input--place--wrap {
+  position: relative;
+  width: 36%;
+}
+
+.col--place {
+  width: 100%;
 }
 
 label {
@@ -139,10 +146,6 @@ label {
   color: #383838;
   font-size: 18px;
   transition: 0.2s ease all;
-}
-
-.col--place {
-  width: 36%;
 }
 
 input:focus ~ .label--place,
@@ -158,9 +161,12 @@ input:not(:focus):valid ~ .label--place {
   top: 20px;
 }
 
-.input-date--wrap {
+.input--date--wrap {
   display: flex;
   width: 22%;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  margin-top: -3px;
 }
 
 .label--date--wrap-first {
@@ -175,7 +181,6 @@ input:not(:focus):valid ~ .label--place {
 
 .col--date {
   width: 100%;
-  border: 3px solid #f5bd41;
 }
 
 input:focus ~ .label--date--first,
@@ -188,7 +193,7 @@ input:not(:focus):valid ~ .label--date--first {
 
 .label--date--first {
   left: 24px;
-  top: 22px;
+  top: 20px;
 }
 
 input:focus ~ .label--date--second,
@@ -201,7 +206,7 @@ input:not(:focus):valid ~ .label--date--second {
 
 .label--date--second {
   left: 24px;
-  top: 22px;
+  top: 20px;
 }
 
 input[type="date" i] {
@@ -428,7 +433,7 @@ footer {
 
   .row--form {
     display: block;
-    margin-block-start: 3px;
+    margin-block-start: 0px;
   }
 
   input {
@@ -447,11 +452,11 @@ footer {
     font-size: 12px;
   }
 
-  .input-place--wrap {
-    position: relative;
+  .input--place--wrap {
+    width: 100%;
   }
 
-  .input-place--wrap::before {
+  .input--place--wrap::before {
     content: "";
     position: absolute;
     top: 15px;
@@ -477,10 +482,11 @@ footer {
     font-weight: 500;
   }
 
-  .input-date--wrap {
+  .input--date--wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border: none;
   }
 
   .label--date--wrap-first {
@@ -535,7 +541,7 @@ footer {
 
   input:focus ~ .label--quests,
   input:not(:focus):valid ~ .label--quests {
-    top: 109px;
+    top: 115px;
     left: 36px;
     font-size: 12px;
     color: #383838;
@@ -544,7 +550,7 @@ footer {
 
   .label--quests {
     left: 36px;
-    top: 118px;
+    top: 124px;
     font-size: 15px;
     font-weight: 500;
   }
@@ -678,7 +684,7 @@ footer {
 
   .row--form {
     display: block;
-    margin-block-start: 3px;
+    margin-block-start: 0px;
   }
 
   input {
@@ -697,11 +703,11 @@ footer {
     font-size: 12px;
   }
 
-  .input-place--wrap {
-    position: relative;
+  .input--place--wrap {
+    width: 100%;
   }
 
-  .input-place--wrap::before {
+  .input--place--wrap::before {
     content: "";
     position: absolute;
     top: 15px;
@@ -727,10 +733,11 @@ footer {
     font-weight: 500;
   }
 
-  .input-date--wrap {
+  .input--date--wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border: none;
   }
 
   .label--date--wrap-first {
@@ -785,7 +792,7 @@ footer {
 
   input:focus ~ .label--quests,
   input:not(:focus):valid ~ .label--quests {
-    top: 109px;
+    top: 115px;
     left: 36px;
     font-size: 12px;
     color: #383838;
@@ -794,7 +801,7 @@ footer {
 
   .label--quests {
     left: 36px;
-    top: 118px;
+    top: 124px;
     font-size: 15px;
     font-weight: 500;
   }
@@ -1005,11 +1012,11 @@ footer {
     font-size: 12px;
   }
 
-  .input-place--wrap {
-    position: relative;
+  .input--place--wrap {
+    width: 100%;
   }
 
-  .input-place--wrap::before {
+  .input--place--wrap::before {
     content: "";
     position: absolute;
     top: 15px;
@@ -1035,10 +1042,11 @@ footer {
     font-weight: 500;
   }
 
-  .input-date--wrap {
+  .input--date--wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border: none;
   }
 
   .label--date--wrap-first {
@@ -1093,7 +1101,7 @@ footer {
 
   input:focus ~ .label--quests,
   input:not(:focus):valid ~ .label--quests {
-    top: 109px;
+    top: 115px;
     left: 36px;
     font-size: 12px;
     color: #383838;
@@ -1102,7 +1110,7 @@ footer {
 
   .label--quests {
     left: 36px;
-    top: 118px;
+    top: 124px;
     font-size: 15px;
     font-weight: 500;
   }
