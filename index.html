@@ -85,6 +85,14 @@
           fill="#BFBFBF"
         />
       </symbol>
+      <symbol id="arrow" viewBox="0 0 9 21">
+        <path
+          d="M.941176 19.8235L7.1 11.6118c.53333-.7111.53333-1.68892 0-2.40003L.941176 1"
+          stroke="#383838"
+          stroke-width="2"
+          fill="none"
+        />
+      </symbol>
     </svg>
 
     <div class="top-section">
@@ -195,9 +203,9 @@
 
     <div class="advantages">
       <div class="container container--advantages">
-        <h2 class="advantages__heading">What do we offer</h2>
-
-        <hr class="advantages__line" />
+        <div class="heading--advantages">
+          <h2 class="heading">What do we offer</h2>
+        </div>
 
         <div class="row">
           <div class="advantages__col col-md-6 col-12">
@@ -226,6 +234,68 @@
               <use href="#like" />
             </svg>
             <div class="advantages__text">Real guest reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="homes">
+      <div class="container container--homes">
+        <h2 class="heading heading--homes">Homes guests loves</h2>
+
+        <div class="row row--homes">
+          <div class="arrow-wrap">
+            <svg class="arrow">
+              <use href="#arrow" />
+            </svg>
+          </div>
+
+          <div class="homes__col col-md-6 col-6 first-item">
+            <div class="homes__img-wrap">
+              <img src="./image/hotel.jpg" alt="Hotel" class="homes__img" />
+            </div>
+            <div class="homes__text homes__text--color-blue">Hotel Leopold</div>
+            <div class="homes__text homes__text--color-grey">
+              Saint Petersburg, Russia
+            </div>
+          </div>
+
+          <div class="homes__col col-md-6 col-6">
+            <div class="homes__img-wrap">
+              <img
+                src="./image/apartment.jpg"
+                alt="Apartment"
+                class="homes__img"
+              />
+            </div>
+            <div class="homes__text homes__text--color-blue">
+              Apartment Sunshine
+            </div>
+            <div class="homes__text homes__text--color-grey">
+              Santa Cruz de Tenerife, Spain
+            </div>
+          </div>
+
+          <div class="homes__col for-scroll">
+            <div class="homes__img-wrap">
+              <img src="./image/villa.jpg" alt="Villa" class="homes__img" />
+            </div>
+            <div class="homes__text homes__text--color-blue">Villa Kunerad</div>
+            <div class="homes__text homes__text--color-grey">
+              Vysokie Tatry, Slowakia
+            </div>
+          </div>
+
+          <div class="homes__col for-scroll">
+            <div class="homes__img-wrap">
+              <img src="./image/hostel.jpg" alt="Hostel" class="homes__img" />
+            </div>
+            <div class="homes__text homes__text--color-blue">
+              Hostel Friendship
+            </div>
+            <div class="homes__text homes__text--color-grey">
+              Berlin, Germany
+            </div>
           </div>
         </div>
       </div>

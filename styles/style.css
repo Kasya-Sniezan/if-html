@@ -271,20 +271,16 @@ button {
   margin: 0 auto;
 }
 
-.advantages__heading {
+.heading {
   font-size: 40px;
   font-weight: 500;
   line-height: 47px;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
-.advantages__line {
-  width: 100px;
-  height: 4px;
-  border: 0px;
-  background-color: #f5bd41;
-  margin: 0 auto;
-  margin-bottom: 80px;
+.heading--advantages {
+  margin-bottom: 100px;
+  position: relative;
 }
 
 .row {
@@ -310,6 +306,76 @@ button {
 .advantages__text {
   font-size: 24px;
   line-height: 28px;
+}
+
+.homes {
+  background-color: #eaf0f9;
+}
+
+.container--homes {
+  position: relative;
+}
+
+.heading--homes {
+  margin-bottom: 105px;
+}
+
+.row--homes {
+  flex-wrap: nowrap;
+}
+
+.arrow-wrap {
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f3f3f4;
+}
+
+.arrow {
+  width: 43px;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.homes__col {
+  width: 25%;
+  margin-right: 16px;
+}
+
+.homes__col:last-child {
+  margin-right: 0px;
+}
+
+.homes__img-wrap {
+  margin-bottom: 24px;
+}
+
+.homes__img {
+  height: auto;
+  width: 100%;
+  max-width: 296px;
+}
+
+.homes__text {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.homes__text:last-child {
+  margin-bottom: 0px;
+}
+
+.homes__text--color-blue {
+  color: #3077c6;
+}
+
+.homes__text--color-grey {
+  color: #bfbfbf;
 }
 
 footer {
@@ -836,6 +902,58 @@ footer {
     margin-bottom: 50px;
   }
 
+  /* homes section */
+  .container--homes {
+    padding: 40px 30px;
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .heading--homes {
+    margin-bottom: 40px;
+  }
+
+  .row--homes {
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .arrow-wrap {
+    top: 35%;
+    right: 15px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 20px;
+    padding-top: 5px;
+  }
+
+  .homes__col {
+    margin-right: 0px;
+  }
+
+  .first-item {
+    margin-right: 16px;
+  }
+
+  .homes__img-wrap {
+    margin-bottom: 16px;
+  }
+
+  .homes__text:last-child {
+    margin-bottom: 26px;
+  }
+
+  .for-scroll {
+    display: none;
+  }
+
   /* for footer */
   .container--footer {
     padding: 40px;
@@ -1180,6 +1298,66 @@ footer {
   .advantages__text {
     font-size: 15px;
     line-height: 18px;
+  }
+
+  /* homes section */
+  .container--homes {
+    padding: 40px 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .heading--homes {
+    margin-bottom: 32px;
+  }
+
+  .row--homes {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  .arrow-wrap {
+    top: 43%;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 20px;
+    padding-top: 5px;
+  }
+
+  .homes__col {
+    margin-right: 0px;
+  }
+
+  .first-item {
+    margin-right: 16px;
+  }
+
+  .homes__img-wrap {
+    margin-bottom: 8px;
+  }
+
+  .homes__img {
+    height: auto;
+    width: 100%;
+    max-width: 156px;
+  }
+
+  .homes__text {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+  }
+
+  .for-scroll {
+    display: none;
   }
 
   /* for footer  */
