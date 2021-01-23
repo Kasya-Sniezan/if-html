@@ -35,6 +35,10 @@ header {
   max-width: 1232px;
   padding: 51px 16px 0px 16px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header__logo {
@@ -108,7 +112,7 @@ header {
   background-color: #f5bd41;
 }
 
-section {
+.section__box {
   width: 1232px;
   padding: 196px 16px 120px 16px;
   margin: 0 auto;
@@ -374,14 +378,11 @@ button {
   margin-right: 0px;
 }
 
-.homes__img-wrap {
-  margin-bottom: 24px;
-}
-
 .homes__img {
   height: auto;
   width: 100%;
   max-width: 296px;
+  margin-bottom: 24px;
 }
 
 .homes__text {
@@ -471,10 +472,6 @@ footer {
     background-size: cover;
   }
 
-  .row--header {
-    align-items: center;
-  }
-
   header {
     padding: 52px 30px 0px 30px;
   }
@@ -501,7 +498,7 @@ footer {
     right: 0;
   }
 
-  section {
+  .section__box {
     padding: 52px 30px 120px 30px;
   }
 
@@ -708,10 +705,6 @@ footer {
     background-size: cover;
   }
 
-  .row--header {
-    align-items: center;
-  }
-
   header {
     padding: 30px 30px 0px 30px;
   }
@@ -751,7 +744,7 @@ footer {
     right: 0;
   }
 
-  section {
+  .section__box {
     padding: 52px 30px 40px 30px;
   }
 
@@ -968,7 +961,7 @@ footer {
     margin-right: 16px;
   }
 
-  .homes__img-wrap {
+  .homes__img {
     margin-bottom: 16px;
   }
 
@@ -1072,10 +1065,6 @@ footer {
     background-size: cover;
   }
 
-  .row--header {
-    align-items: center;
-  }
-
   header {
     padding: 12px 16px 0px 16px;
   }
@@ -1115,7 +1104,7 @@ footer {
     right: 0;
   }
 
-  section {
+  .section__box {
     padding: 52px 16px 40px 16px;
   }
 
@@ -1369,7 +1358,7 @@ footer {
     margin-right: 16px;
   }
 
-  .homes__img-wrap {
+  .homes__img {
     margin-bottom: 8px;
   }
 
