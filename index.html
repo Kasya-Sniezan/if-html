@@ -98,9 +98,11 @@
     <div class="top-section">
       <header>
         <div class="logo__col col-md-8 col-7">
-          <svg class="header__logo">
-            <use href="#logo" />
-          </svg>
+          <a href="#">
+            <svg class="header__logo">
+              <use href="#logo" />
+            </svg>
+          </a>
         </div>
         <nav class="link__col--first">
           <a href="index.html" class="header__link">Stays</a>
@@ -240,58 +242,163 @@
       <article class="container container--homes">
         <h2 class="heading heading--homes">Homes guests loves</h2>
 
-        <article class="row row--homes">
+        <article class="row row--images">
           <div class="arrow-wrap">
             <svg class="arrow">
               <use href="#arrow" />
             </svg>
           </div>
 
-          <figure class="homes__col col-md-6 col-6 first-item">
-            <img src="./image/hotel.jpg" alt="Hotel" class="homes__img" />
-            <figcaption class="homes__text homes__text--color-blue">
-              Hotel Leopold
-            </figcaption>
-            <figcaption class="homes__text homes__text--color-grey">
+          <figure class="images__col col-md-6 col-6 first-item">
+            <a href="#" class="images__link">
+              <img src="./image/hotel.jpg" alt="Hotel" class="img-in-row" />
+              <figcaption class="images__text images__text--color-blue">
+                Hotel Leopold
+              </figcaption>
+            </a>
+            <figcaption class="images__text images__text--color-grey">
               Saint Petersburg, Russia
             </figcaption>
           </figure>
 
-          <figure class="homes__col col-md-6 col-6">
-            <img
-              src="./image/apartment.jpg"
-              alt="Apartment"
-              class="homes__img"
-            />
-            <figcaption class="homes__text homes__text--color-blue">
-              Apartment Sunshine
-            </figcaption>
-            <figcaption class="homes__text homes__text--color-grey">
+          <figure class="images__col col-md-6 col-6">
+            <a href="#" class="images__link">
+              <img
+                src="./image/apartment.jpg"
+                alt="Apartment"
+                class="img-in-row"
+              />
+              <figcaption class="images__text images__text--color-blue">
+                Apartment Sunshine
+              </figcaption>
+            </a>
+            <figcaption class="images__text images__text--color-grey">
               Santa Cruz de Tenerife, Spain
             </figcaption>
           </figure>
 
-          <figure class="homes__col for-scroll">
-            <img src="./image/villa.jpg" alt="Villa" class="homes__img" />
-            <figcaption class="homes__text homes__text--color-blue">
-              Villa Kunerad
-            </figcaption>
-            <figcaption class="homes__text homes__text--color-grey">
+          <figure class="images__col for-scroll">
+            <a href="#" class="images__link">
+              <img src="./image/villa.jpg" alt="Villa" class="img-in-row" />
+              <figcaption class="images__text images__text--color-blue">
+                Villa Kunerad
+              </figcaption>
+            </a>
+            <figcaption class="images__text images__text--color-grey">
               Vysokie Tatry, Slowakia
             </figcaption>
           </figure>
 
-          <figure class="homes__col for-scroll">
-            <img src="./image/hostel.jpg" alt="Hostel" class="homes__img" />
-            <figcaption class="homes__text homes__text--color-blue">
-              Hostel Friendship
-            </figcaption>
-            <figcaption class="homes__text homes__text--color-grey">
+          <figure class="images__col for-scroll">
+            <a href="#" class="images__link">
+              <img src="./image/hostel.jpg" alt="Hostel" class="img-in-row" />
+              <figcaption class="images__text images__text--color-blue">
+                Hostel Friendship
+              </figcaption>
+            </a>
+            <figcaption class="images__text images__text--color-grey">
               Berlin, Germany
             </figcaption>
           </figure>
         </article>
       </article>
+    </section>
+
+    <section class="destinations">
+      <article class="container container--destinations">
+        <div class="heading--destinations">
+          <h2 class="heading">The best destinations</h2>
+        </div>
+
+        <nav class="destinations__tabs tabs__items col-md-12 col-12">
+          <a href="#" class="tab__item tab--first">Regions</a>
+          <a href="#" class="tab__item tab--second">Cities</a>
+          <a href="#" class="tab__item tab--third"
+            ><span
+              >Places <span class="mobile-view-not">of interest</span></span
+            ></a
+          >
+        </nav>
+
+        <article class="row row--images row--destinations">
+          <figure class="images__col col-md-6 col-6 first-item">
+            <a href="#" class="images__link--destinations">
+              <img
+                src="./image/maldives.jpg"
+                alt="Maldives"
+                class="img-in-row"
+              />
+            </a>
+            <a href="#" class="images__link"
+              ><figcaption class="images__text images__text--color-blue">
+                Maldives
+              </figcaption>
+            </a>
+          </figure>
+
+          <figure class="images__col col-md-6 col-6">
+            <a href="#" class="images__link--destinations">
+              <img src="./image/spain.jpg" alt="Spain" class="img-in-row" />
+            </a>
+            <a href="#" class="images__link">
+              <figcaption class="images__text images__text--color-blue">
+                Spain
+              </figcaption>
+            </a>
+          </figure>
+
+          <figure class="images__col for-scroll">
+            <a href="#" class="images__link--destinations">
+              <img src="./image/norway.jpg" alt="Norway" class="img-in-row" />
+            </a>
+            <a href="#" class="images__link">
+              <figcaption class="images__text images__text--color-blue">
+                Norway
+              </figcaption>
+            </a>
+          </figure>
+
+          <figure class="images__col for-scroll images__col--destinations">
+            <a href="#" class="images__link--destinations">
+              <img src="./image/island.jpg" alt=" Island" class="img-in-row" />
+            </a>
+            <a href="#" class="images__link">
+              <figcaption class="images__text images__text--color-blue">
+                Island
+              </figcaption>
+            </a>
+          </figure>
+
+          <div class="arrow-wrap arrow-wrap--destinations">
+            <svg class="arrow arrow--destinations">
+              <use href="#arrow" />
+            </svg>
+          </div>
+        </article>
+      </article>
+    </section>
+
+    <section class="container sign-up">
+      <div class="sign-up__user-icon--wrap">
+        <a href="#">
+          <svg class="sign-up__user-icon">
+            <use href="#user" />
+          </svg>
+        </a>
+      </div>
+      <div class="sign-up__offer--wrap">
+        <p class="sign-up__offer">Sign up and get 20% off your first booking</p>
+      </div>
+      <nav class="sign-up__buttom--wrap">
+        <a href="#" class="sign-up__buttom">Sign up</a>
+      </nav>
+      <div class="sign-up__cross--wrap">
+        <a href="#">
+          <svg class="sign-up__close-cross">
+            <use href="#close-cross" />
+          </svg>
+        </a>
+      </div>
     </section>
 
     <footer>
