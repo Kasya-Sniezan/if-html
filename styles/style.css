@@ -35,6 +35,10 @@ header {
   max-width: 1232px;
   padding: 51px 16px 0px 16px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header__logo {
@@ -108,7 +112,7 @@ header {
   background-color: #f5bd41;
 }
 
-section {
+.section__box {
   width: 1232px;
   padding: 196px 16px 120px 16px;
   margin: 0 auto;
@@ -344,7 +348,7 @@ button {
   margin-bottom: 105px;
 }
 
-.row--homes {
+.row--images {
   flex-wrap: nowrap;
 }
 
@@ -365,41 +369,219 @@ button {
   padding-top: 10px;
 }
 
-.homes__col {
+.images__col {
   width: 25%;
   margin-right: 16px;
 }
 
-.homes__col:last-child {
+.images__col:last-child {
   margin-right: 0px;
 }
 
-.homes__img-wrap {
-  margin-bottom: 24px;
+.images__link {
+  text-decoration: none;
 }
 
-.homes__img {
+.img-in-row {
   height: auto;
   width: 100%;
   max-width: 296px;
+  margin-bottom: 24px;
 }
 
-.homes__text {
+.images__text {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 24px;
 }
 
-.homes__text:last-child {
-  margin-bottom: 0px;
-}
-
-.homes__text--color-blue {
+.images__text--color-blue {
   color: #3077c6;
 }
 
-.homes__text--color-grey {
+.images__text--color-grey {
   color: #bfbfbf;
+  margin-bottom: 0px;
+}
+
+.heading--destinations {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.heading--destinations:hover:after {
+  content: "";
+  border: 0px;
+  background-color: #f5bd41;
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  top: 67px;
+  left: 46%;
+}
+
+.destinations {
+  background: #ffffff;
+}
+
+.destinations__tabs {
+  width: 50%;
+  margin-bottom: 66px;
+  background: #f3f3f4;
+  border-radius: 8px;
+}
+
+.tabs__items {
+  display: flex;
+}
+
+.tab__item {
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #383838;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.tab--first {
+  width: 30%;
+}
+
+.tab--second {
+  width: 30%;
+}
+
+.tab--third {
+  width: 40%;
+}
+
+.tab__item:hover {
+  background: #3077c6;
+  color: #ffffff;
+}
+
+.row--destinations {
+  position: relative;
+  margin-bottom: 88px;
+}
+
+.images__link--destinations {
+  display: block;
+  position: relative;
+}
+
+.images__link--destinations:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 28px;
+  background: rgba(56, 56, 56, 0.4);
+  box-shadow: inset 0px 4px 70px rgba(56, 56, 56, 0.5);
+  opacity: 0;
+}
+
+.images__link--destinations:after {
+  content: "Book now";
+  position: absolute;
+  top: 40%;
+  right: 27%;
+  text-decoration: none;
+  font-size: 18px;
+  color: #3077c6;
+  width: 128px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.images__link--destinations:hover::before,
+.images__link--destinations:hover::after {
+  opacity: 1;
+}
+
+.images__col--destinations {
+  margin-right: 0px;
+}
+
+.arrow-wrap--destinations {
+  top: 113%;
+  right: 50%;
+}
+
+.arrow--destinations {
+  width: 40px;
+  height: 22px;
+  padding-top: 0px;
+  padding-left: 20px;
+  transform: rotate(90deg);
+}
+
+.sign-up {
+  background: #eaf0f9;
+  padding: 0px 16px 52px 16px;
+  position: relative;
+}
+
+.sign-up__user-icon--wrap {
+  position: absolute;
+  top: 25%;
+  left: 24px;
+}
+
+.sign-up__user-icon {
+  width: 86px;
+  height: 86px;
+}
+
+.sign-up__offer--wrap {
+  padding: 51px 0px 21px 134px;
+}
+
+.sign-up__offer {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #383838;
+}
+
+.sign-up__buttom--wrap {
+  width: 128px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 134px;
+  background: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+}
+
+.sign-up__buttom {
+  text-decoration: none;
+  font-size: 18px;
+  color: #3077c6;
+}
+
+.sign-up__cross--wrap {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.sign-up__close-cross {
+  width: 26px;
+  height: 26px;
 }
 
 footer {
@@ -471,10 +653,6 @@ footer {
     background-size: cover;
   }
 
-  .row--header {
-    align-items: center;
-  }
-
   header {
     padding: 52px 30px 0px 30px;
   }
@@ -501,7 +679,7 @@ footer {
     right: 0;
   }
 
-  section {
+  .section__box {
     padding: 52px 30px 120px 30px;
   }
 
@@ -708,10 +886,6 @@ footer {
     background-size: cover;
   }
 
-  .row--header {
-    align-items: center;
-  }
-
   header {
     padding: 30px 30px 0px 30px;
   }
@@ -751,7 +925,7 @@ footer {
     right: 0;
   }
 
-  section {
+  .section__box {
     padding: 52px 30px 40px 30px;
   }
 
@@ -942,7 +1116,7 @@ footer {
     margin-bottom: 40px;
   }
 
-  .row--homes {
+  .row--images {
     flex-wrap: nowrap;
     text-align: center;
   }
@@ -960,7 +1134,7 @@ footer {
     padding-top: 5px;
   }
 
-  .homes__col {
+  .images__col {
     margin-right: 0px;
   }
 
@@ -968,16 +1142,83 @@ footer {
     margin-right: 16px;
   }
 
-  .homes__img-wrap {
+  .img-in-row {
     margin-bottom: 16px;
-  }
-
-  .homes__text:last-child {
-    margin-bottom: 26px;
   }
 
   .for-scroll {
     display: none;
+  }
+
+  /* for destinations section*/
+  .heading--destinations:hover:after,
+  .images__link--destinations:hover::after,
+  .images__link--destinations:hover::before,
+  .for-scroll {
+    display: none;
+  }
+
+  .container--destinations {
+    padding: 40px 30px;
+  }
+
+  .heading--destinations {
+    margin-bottom: 40px;
+  }
+
+  .destinations__tabs {
+    background: #ffffff;
+    margin-bottom: 24px;
+    border-radius: 4px;
+  }
+
+  .tab__item {
+    flex: 0 1 33.333%;
+  }
+
+  .tab__item:hover {
+    background: #3077c6;
+  }
+
+  .mobile-view-not,
+  .heading--destinations:hover:after {
+    display: none;
+  }
+
+  .row--images {
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .row--destinations {
+    margin-bottom: 0px;
+  }
+
+  .arrow-wrap--destinations {
+    top: 35%;
+    right: -15px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .arrow--destinations {
+    width: 30px;
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 0px;
+    transform: rotate(0deg);
+  }
+
+  .images__col {
+    margin-right: 0px;
+  }
+
+  .first-item {
+    margin-right: 16px;
+  }
+
+  .img-in-row {
+    margin-bottom: 16px;
   }
 
   /* for footer */
@@ -1072,10 +1313,6 @@ footer {
     background-size: cover;
   }
 
-  .row--header {
-    align-items: center;
-  }
-
   header {
     padding: 12px 16px 0px 16px;
   }
@@ -1115,7 +1352,7 @@ footer {
     right: 0;
   }
 
-  section {
+  .section__box {
     padding: 52px 16px 40px 16px;
   }
 
@@ -1343,7 +1580,7 @@ footer {
     margin-bottom: 32px;
   }
 
-  .row--homes {
+  .row--images {
     flex-wrap: nowrap;
     text-align: left;
   }
@@ -1361,7 +1598,7 @@ footer {
     padding-top: 5px;
   }
 
-  .homes__col {
+  .images__col {
     margin-right: 0px;
   }
 
@@ -1369,24 +1606,160 @@ footer {
     margin-right: 16px;
   }
 
-  .homes__img-wrap {
+  .img-in-row {
     margin-bottom: 8px;
   }
 
-  .homes__img {
+  .img-in-row {
     height: auto;
     width: 100%;
     max-width: 156px;
   }
 
-  .homes__text {
+  .images__text {
     font-size: 12px;
     line-height: 14px;
     margin-bottom: 4px;
   }
 
+  .images__text--color-grey {
+    margin-bottom: 0px;
+  }
+
   .for-scroll {
     display: none;
+  }
+
+  /* destinations section */
+  .heading--destinations:hover:after,
+  .images__link--destinations:hover::after,
+  .images__link--destinations:hover::before,
+  .for-scroll {
+    display: none;
+  }
+
+  .container--destinations {
+    padding: 40px 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .heading--destinations {
+    margin-bottom: 32px;
+  }
+
+  .destinations__tabs {
+    background: #ffffff;
+    margin-bottom: 24px;
+    border-radius: 4px;
+  }
+
+  .tab__item {
+    border: 1px solid #f3f3f4;
+    height: 32px;
+    font-size: 19px;
+    border-radius: 4px;
+  }
+
+  .tab__item:hover {
+    background: #3077c6;
+  }
+
+  .tab--first {
+    width: 98px;
+    margin-right: 16px;
+  }
+
+  .tab--second {
+    width: 98px;
+    margin-right: 16px;
+  }
+
+  .tab--third {
+    width: 98px;
+  }
+
+  .mobile-view-not {
+    display: none;
+  }
+
+  .row--destinations {
+    position: relative;
+    margin-bottom: 0px;
+  }
+
+  .arrow-wrap--destinations {
+    top: 35%;
+    right: -15px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .arrow--destinations {
+    width: 30px;
+    height: 20px;
+    padding-top: 5px;
+    padding-left: 0px;
+    transform: rotate(0deg);
+  }
+
+  /* for sign-up  */
+  .sign-up__user-icon--wrap,
+  .sign-up__user-icon,
+  .sign-up__buttom--wrap,
+  .sign-up__buttom {
+    display: none;
+  }
+
+  .sign-up {
+    background: #ffffff;
+    height: 106px;
+    padding: 24px 16px;
+    position: relative;
+  }
+
+  .sign-up__offer--wrap {
+    padding: 15px 73px 0px 123px;
+  }
+
+  .sign-up__offer {
+    font-size: 12px;
+    line-height: 14px;
+    color: #383838;
+  }
+
+  .sign-up__cross--wrap {
+    position: absolute;
+    top: 45%;
+    left: 17px;
+  }
+
+  .sign-up__close-cross {
+    width: 16px;
+    height: 16px;
+  }
+
+  .sign-up__offer--wrap::after {
+    content: url(../image/logo-sign-up-mobile.svg);
+    position: absolute;
+    top: 23%;
+    left: 50px;
+  }
+
+  .sign-up__offer--wrap::before {
+    content: "Install";
+    position: absolute;
+    width: 41px;
+    height: 16px;
+    top: 45%;
+    right: 4%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3077c6;
   }
 
   /* for footer  */
