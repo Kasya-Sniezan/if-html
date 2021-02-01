@@ -12,6 +12,10 @@ ul[class] {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -61,7 +65,6 @@ header {
 .header__link {
   font-size: 24px;
   line-height: 40px;
-  text-decoration: none;
   color: #ffffff;
   position: relative;
 }
@@ -99,17 +102,6 @@ header {
 .header__icon--third {
   width: 0;
   width: 0;
-}
-
-.line--wrap {
-  margin-left: 72.5%;
-}
-
-.header__line {
-  width: 50px;
-  height: 4px;
-  border: 0px;
-  background-color: #f5bd41;
 }
 
 .section__box {
@@ -229,7 +221,6 @@ input:not(:focus):valid ~ .label--date--second {
 input[type="date" i] {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 400;
   padding-inline-start: 24px;
 }
 
@@ -256,6 +247,7 @@ button {
   border: none;
   margin-block-start: -3px;
   margin-inline-end: -3px;
+  cursor: pointer;
 }
 
 .col--button {
@@ -378,10 +370,6 @@ button {
   margin-right: 0px;
 }
 
-.images__link {
-  text-decoration: none;
-}
-
 .img-in-row {
   height: auto;
   width: 100%;
@@ -404,12 +392,12 @@ button {
   margin-bottom: 0px;
 }
 
-.heading--destinations {
+.heading-wrap {
   margin-bottom: 100px;
   position: relative;
 }
 
-.heading--destinations:hover:after {
+.heading-wrap:hover:after {
   content: "";
   border: 0px;
   background-color: #f5bd41;
@@ -441,9 +429,7 @@ button {
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
-  text-decoration: none;
   color: #383838;
-  font-weight: normal;
   font-size: 24px;
 }
 
@@ -491,7 +477,6 @@ button {
   position: absolute;
   top: 40%;
   right: 27%;
-  text-decoration: none;
   font-size: 18px;
   color: #3077c6;
   width: 128px;
@@ -568,7 +553,6 @@ button {
 }
 
 .sign-up__buttom {
-  text-decoration: none;
   font-size: 18px;
   color: #3077c6;
 }
@@ -584,6 +568,140 @@ button {
   height: 26px;
 }
 
+.reviews {
+  background: #ffffff;
+}
+
+.heading--mobile {
+  display: none;
+}
+
+.row--reviews {
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+.arrow-wrap--reviews {
+  top: 25%;
+  right: 0;
+}
+
+.reviews__card-col {
+  width: 33.33%;
+  margin-right: 16px;
+  background: #eaf0f9;
+}
+
+.reviews__card-col:last-child {
+  margin-right: 0px;
+}
+
+.card-image-wrap {
+  position: relative;
+}
+
+.card-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  position: absolute;
+  top: 88%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(56, 56, 56, 0.7);
+  opacity: 1;
+}
+
+.price-number-wrap {
+  padding: 16px 24px 11px 16px;
+  color: #ffffff;
+}
+
+.price-number {
+  font-weight: 500;
+}
+
+.card-content {
+  position: relative;
+  margin: 24px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+}
+
+.reviews-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text--head {
+  color: #3077c6;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.card-text--simple {
+  color: #3077c6;
+  margin-bottom: 29px;
+  font-weight: 400;
+}
+
+.score--number-wrap {
+  width: 48px;
+  height: 32px;
+  background: #10367c;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  float: right;
+}
+
+.score--number {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-reviews {
+  float: right;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bfbfbf;
+}
+
+.person {
+  display: flex;
+  margin-bottom: 22.33px;
+}
+
+.reviews__account-circle {
+  width: 53.33px;
+  height: 53.33px;
+  margin-right: 21.33px;
+}
+
+.person--name {
+  margin-bottom: 8px;
+}
+
+.person--country-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.person--country {
+  color: #bfbfbf;
+  margin-left: 4px;
+}
+
 footer {
   background-color: #10367c;
 }
@@ -593,16 +711,13 @@ footer {
 }
 
 .footer__item {
-  font-weight: 400;
   font-size: 20px;
-  text-decoration: none;
   color: #ffffff;
 }
 
 .footer__item--first {
   font-weight: 500;
   font-size: 20px;
-  text-decoration: none;
   color: #ffffff;
 }
 
@@ -1151,10 +1266,12 @@ footer {
   }
 
   /* for destinations section*/
-  .heading--destinations:hover:after,
+  .heading-wrap:hover:after,
   .images__link--destinations:hover::after,
   .images__link--destinations:hover::before,
-  .for-scroll {
+  .for-scroll,
+  .mobile-view-not,
+  .heading-wrap:hover:after {
     display: none;
   }
 
@@ -1162,7 +1279,7 @@ footer {
     padding: 40px 30px;
   }
 
-  .heading--destinations {
+  .heading-wrap {
     margin-bottom: 40px;
   }
 
@@ -1178,11 +1295,6 @@ footer {
 
   .tab__item:hover {
     background: #3077c6;
-  }
-
-  .mobile-view-not,
-  .heading--destinations:hover:after {
-    display: none;
   }
 
   .row--images {
@@ -1219,6 +1331,66 @@ footer {
 
   .img-in-row {
     margin-bottom: 16px;
+  }
+
+  /* for reviews block */
+  .heading--desktop,
+  .arrow-wrap--reviews,
+  .price,
+  .mobile-view-last-item {
+    display: none;
+  }
+
+  .container--reviews {
+    padding: 40px 18px 40px 16px;
+  }
+
+  .heading--mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews__card-col {
+    margin-right: 0px;
+  }
+
+  .first-card {
+    margin-right: 16px;
+  }
+
+  .card-content {
+    margin: 12px 8px 32px 8px;
+    font-size: 15px;
+    line-height: 17.5px;
+  }
+
+  .score--number-wrap {
+    width: 39px;
+    height: 26px;
+  }
+
+  .score--number {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .number-reviews {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .person {
+    margin-bottom: 21px;
+  }
+
+  .reviews__account-circle {
+    width: 44px;
+    height: 44px;
+    margin-right: 13px;
+  }
+
+  .person--name {
+    margin-bottom: 4px;
   }
 
   /* for footer */
@@ -1587,7 +1759,7 @@ footer {
 
   .arrow-wrap {
     top: 43%;
-    right: 0px;
+    right: 5px;
     width: 28px;
     height: 28px;
   }
@@ -1631,7 +1803,7 @@ footer {
   }
 
   /* destinations section */
-  .heading--destinations:hover:after,
+  .heading-wrap:hover:after,
   .images__link--destinations:hover::after,
   .images__link--destinations:hover::before,
   .for-scroll {
@@ -1647,7 +1819,7 @@ footer {
     line-height: 33px;
   }
 
-  .heading--destinations {
+  .heading-wrap {
     margin-bottom: 32px;
   }
 
@@ -1693,7 +1865,7 @@ footer {
 
   .arrow-wrap--destinations {
     top: 35%;
-    right: -15px;
+    right: -13px;
     width: 28px;
     height: 28px;
   }
@@ -1760,6 +1932,97 @@ footer {
     font-size: 14px;
     line-height: 16px;
     color: #3077c6;
+  }
+
+  /* for reviews block */
+  .heading--desktop,
+  .price,
+  .arrow-wrap--reviews,
+  .mobile-view-middle-item,
+  .mobile-view-last-item {
+    display: none;
+  }
+
+  .reviews {
+    background: #eaf0f9;
+  }
+
+  .container--reviews {
+    padding: 40px 18px 40px 16px;
+  }
+
+  .heading--mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviews__card-col {
+    margin-right: 0px;
+  }
+
+  .card-content {
+    margin: 12px 0px 32px 0px;
+    font-size: 15px;
+    line-height: 17.5px;
+  }
+
+  .card-text--head {
+    margin-bottom: 8px;
+  }
+
+  .card-text--simple {
+    margin-bottom: 16px;
+  }
+
+  .score--number-wrap {
+    width: 39px;
+    height: 26px;
+    margin-bottom: 5px;
+  }
+
+  .score--number {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .number-reviews {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .person {
+    margin-bottom: 21px;
+  }
+
+  .reviews__account-circle {
+    width: 44px;
+    height: 44px;
+    margin-right: 13px;
+  }
+
+  .person--name {
+    margin-bottom: 4px;
+  }
+
+  .nav-circle-wrap {
+    width: 56px;
+    height: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-circle {
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #333333;
+    width: 8px;
+    height: 8px;
+  }
+
+  .nav-circle--black-color {
+    background: #333333;
   }
 
   /* for footer  */
