@@ -104,17 +104,6 @@ header {
   width: 0;
 }
 
-.line--wrap {
-  margin-left: 72.5%;
-}
-
-.header__line {
-  width: 50px;
-  height: 4px;
-  border: 0px;
-  background-color: #f5bd41;
-}
-
 .section__box {
   width: 1232px;
   padding: 196px 16px 120px 16px;
@@ -232,7 +221,6 @@ input:not(:focus):valid ~ .label--date--second {
 input[type="date" i] {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 400;
   padding-inline-start: 24px;
 }
 
@@ -404,12 +392,12 @@ button {
   margin-bottom: 0px;
 }
 
-.heading--destinations {
+.heading-wrap {
   margin-bottom: 100px;
   position: relative;
 }
 
-.heading--destinations:hover:after {
+.heading-wrap:hover:after {
   content: "";
   border: 0px;
   background-color: #f5bd41;
@@ -442,7 +430,6 @@ button {
   align-items: center;
   border-radius: 8px;
   color: #383838;
-  font-weight: normal;
   font-size: 24px;
 }
 
@@ -585,24 +572,8 @@ button {
   background: #ffffff;
 }
 
-.heading--reviews {
-  margin-bottom: 100px;
-  position: relative;
-}
-
 .heading--mobile {
   display: none;
-}
-
-.heading--reviews:hover:after {
-  content: "";
-  border: 0px;
-  background-color: #f5bd41;
-  position: absolute;
-  width: 100px;
-  height: 4px;
-  top: 67px;
-  left: 46%;
 }
 
 .row--reviews {
@@ -612,7 +583,7 @@ button {
 
 .arrow-wrap--reviews {
   top: 25%;
-  right: -20px;
+  right: 0;
 }
 
 .reviews__card-col {
@@ -659,17 +630,12 @@ button {
   margin: 24px;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
   color: #383838;
 }
 
 .reviews-info {
   display: flex;
   justify-content: space-between;
-}
-
-.place {
-  display: inline;
 }
 
 .card-text--head {
@@ -684,17 +650,13 @@ button {
   font-weight: 400;
 }
 
-.score {
-  display: inline;
-  justify-content: flex-end;
-}
-
 .score--number-wrap {
   width: 48px;
   height: 32px;
   background: #10367c;
   border-radius: 8px;
-  margin: 0px 0px 8px 35px;
+  margin-bottom: 8px;
+  float: right;
 }
 
 .score--number {
@@ -703,11 +665,13 @@ button {
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .number-reviews {
-  font-weight: normal;
+  float: right;
   font-size: 14px;
   line-height: 16px;
   color: #bfbfbf;
@@ -722,10 +686,6 @@ button {
   width: 53.33px;
   height: 53.33px;
   margin-right: 21.33px;
-}
-
-.person--info {
-  display: inline;
 }
 
 .person--name {
@@ -751,7 +711,6 @@ footer {
 }
 
 .footer__item {
-  font-weight: 400;
   font-size: 20px;
   color: #ffffff;
 }
@@ -1307,10 +1266,12 @@ footer {
   }
 
   /* for destinations section*/
-  .heading--destinations:hover:after,
+  .heading-wrap:hover:after,
   .images__link--destinations:hover::after,
   .images__link--destinations:hover::before,
-  .for-scroll {
+  .for-scroll,
+  .mobile-view-not,
+  .heading-wrap:hover:after {
     display: none;
   }
 
@@ -1318,7 +1279,7 @@ footer {
     padding: 40px 30px;
   }
 
-  .heading--destinations {
+  .heading-wrap {
     margin-bottom: 40px;
   }
 
@@ -1334,11 +1295,6 @@ footer {
 
   .tab__item:hover {
     background: #3077c6;
-  }
-
-  .mobile-view-not,
-  .heading--destinations:hover:after {
-    display: none;
   }
 
   .row--images {
@@ -1379,9 +1335,8 @@ footer {
 
   /* for reviews block */
   .heading--desktop,
-  .heading--reviews:hover:after,
-  .price,
   .arrow-wrap--reviews,
+  .price,
   .mobile-view-last-item {
     display: none;
   }
@@ -1390,18 +1345,9 @@ footer {
     padding: 40px 18px 40px 16px;
   }
 
-  .heading--reviews {
-    margin-bottom: 32px;
-  }
-
   .heading--mobile {
     display: flex;
     justify-content: center;
-  }
-
-  .row--reviews {
-    position: relative;
-    flex-wrap: nowrap;
   }
 
   .reviews__card-col {
@@ -1413,39 +1359,27 @@ footer {
   }
 
   .card-content {
-    position: relative;
     margin: 12px 8px 32px 8px;
     font-size: 15px;
     line-height: 17.5px;
   }
 
-  .card-text--head {
-    margin-bottom: 8px;
-  }
-
-  .card-text--simple {
-    margin-bottom: 16px;
-  }
-
   .score--number-wrap {
     width: 39px;
     height: 26px;
-    margin: 0px 0px 8px 45px;
   }
 
   .score--number {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 25px;
   }
 
   .number-reviews {
     font-size: 12px;
     line-height: 14px;
-    text-align: end;
   }
 
   .person {
-    display: flex;
     margin-bottom: 21px;
   }
 
@@ -1869,7 +1803,7 @@ footer {
   }
 
   /* destinations section */
-  .heading--destinations:hover:after,
+  .heading-wrap:hover:after,
   .images__link--destinations:hover::after,
   .images__link--destinations:hover::before,
   .for-scroll {
@@ -1885,7 +1819,7 @@ footer {
     line-height: 33px;
   }
 
-  .heading--destinations {
+  .heading-wrap {
     margin-bottom: 32px;
   }
 
@@ -2002,7 +1936,6 @@ footer {
 
   /* for reviews block */
   .heading--desktop,
-  .heading--reviews:hover:after,
   .price,
   .arrow-wrap--reviews,
   .mobile-view-middle-item,
@@ -2018,18 +1951,9 @@ footer {
     padding: 40px 18px 40px 16px;
   }
 
-  .heading--reviews {
-    margin-bottom: 32px;
-  }
-
   .heading--mobile {
     display: flex;
     justify-content: center;
-  }
-
-  .row--reviews {
-    position: relative;
-    flex-wrap: nowrap;
   }
 
   .reviews__card-col {
@@ -2037,7 +1961,6 @@ footer {
   }
 
   .card-content {
-    position: relative;
     margin: 12px 0px 32px 0px;
     font-size: 15px;
     line-height: 17.5px;
@@ -2054,22 +1977,20 @@ footer {
   .score--number-wrap {
     width: 39px;
     height: 26px;
-    margin: 0px 0px 8px 45px;
+    margin-bottom: 5px;
   }
 
   .score--number {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 25px;
   }
 
   .number-reviews {
     font-size: 12px;
     line-height: 14px;
-    text-align: end;
   }
 
   .person {
-    display: flex;
     margin-bottom: 21px;
   }
 
@@ -2081,6 +2002,27 @@ footer {
 
   .person--name {
     margin-bottom: 4px;
+  }
+
+  .nav-circle-wrap {
+    width: 56px;
+    height: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-circle {
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #333333;
+    width: 8px;
+    height: 8px;
+  }
+
+  .nav-circle--black-color {
+    background: #333333;
   }
 
   /* for footer  */
